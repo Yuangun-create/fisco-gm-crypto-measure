@@ -1,6 +1,6 @@
 Description
 
-This repository contains a prototype for testing and verifying the performance of Chinese National Cryptographic Algorithms (SM2 encryption/decryption, SM3 hash) in the FISCO BCOS GM (National Secret) blockchain scenario.
+This repository contains a prototype for testing and verifying the performance of SM Algorithms (SM2 encryption/decryption, SM3 hash) in the FISCO BCOS GM (National Secret) blockchain scenario.
 By enabling GM compilation in the underlying FISCO-BCOS kernel and using precompiled contracts to improve computational efficiency, this tool provides methods and sample code for measuring the execution time of a single algorithm operation.
 
 Prerequisites
