@@ -1,0 +1,84 @@
+#include "SM2EncryptPrecompiled.h"
+#include <libethcore/ABI.h>
+#include <libdevcrypto/Common.h>
+#include <libdevcore/CommonData.h>
+#include <openssl/evp.h>
+#include <openssl/ec.h>
+#include <openssl/bn.h>
+#include <openssl/err.h>
+
+using namespace dev;
+using namespace dev::precompiled;
+using namespace dev::eth;
+
+/* ---------- 预编译方法 ---------- */
+const char* const SM2_ENCRYPT_METHOD = "encrypt(string,bytes)";
+
+SM2EncryptPrecompiled::SM2EncryptPrecompiled() {
+    name2Selector[SM2_ENCRYPT_METHOD] = getFuncSelector(SM2_ENCRYPT_METHOD);
+}
+
+// 十六进制字符串 → EVP_PKEY（SM2）
+static EVP_PKEY* hex2pkey(const std::string& hex, bool isPub)
+{
+    EC_KEY* ec = EC_KEY_new_by_curve_name(NID_sm2);
+    const EC_GROUP* grp = EC_KEY_get0_group(ec);
+    BIGNUM* bn = BN_new();
+    BN_hex2bn(&bn, hex.c_str());
+    if (isPub) {
+        EC_POINT* pt = EC_POINT_bn2point(grp, bn, nullptr, nullptr);
+        EC_KEY_set_public_key(ec, pt);
+        EC_POINT_free(pt);
+    } else {
+        EC_KEY_set_private_key(ec, bn);
+    }
+    BN_free(bn);
+    EVP_PKEY* pkey = EVP_PKEY_new();
+    EVP_PKEY_set1_EC_KEY(pkey, ec);
+    EC_KEY_free(ec);
+    return pkey;
+}
+
+// SM2 加密（EVP 自动 ASN1 封装）
+static const char* sm2_encrypt(const std::string& pubHex, const bytes& plain)
+{
+    EVP_PKEY* pkey = hex2pkey(pubHex, true);
+    EVP_PKEY_CTX* ctx = EVP_PKEY_CTX_new(pkey, nullptr);
+    EVP_PKEY_encrypt_init(ctx);
+    //
+    size_t outlen = 0;
+    if (EVP_PKEY_encrypt(ctx, nullptr, &outlen, plain.data(), plain.size()) <= 0)
+        return "EVP_PKEY_encrypt1 failed";
+    //EVP_PKEY_encrypt(ctx, nullptr, &outlen, plain.data(), plain.size());
+    bytes cipher(outlen);
+    //
+    //size_t outlen = 7280;
+    //bytes cipher(outlen);
+    //
+    if (EVP_PKEY_encrypt(ctx, cipher.data(), &outlen, plain.data(), plain.size()) <= 0)
+        throw std::runtime_error("EVP_PKEY_encrypt2 failed");
+    //else{throw std::runtime_error("OK");}
+    //else{return "OK"}
+    //cipher.resize(outlen);
+    EVP_PKEY_CTX_free(ctx);
+    EVP_PKEY_free(pkey);
+    return "OK";
+}
+/* ---------- 主调用函数 ---------- */
+PrecompiledExecResult::Ptr SM2EncryptPrecompiled::call(
+    std::shared_ptr<dev::blockverifier::ExecutiveContext>,
+    bytesConstRef _param,
+    Address const&,
+    Address const&)
+{
+    bytesConstRef data = getParamData(_param);
+    auto result = m_precompiledExecResultFactory->createPrecompiledResult();
+    ContractABI abi;
+    
+    std::string pubHex; bytes plain;
+    abi.abiOut(data, pubHex, plain);
+
+    const char* msg = sm2_encrypt(pubHex, plain);
+    result->setExecResult(abi.abiIn("", std::string(msg)));
+    return result;
+}

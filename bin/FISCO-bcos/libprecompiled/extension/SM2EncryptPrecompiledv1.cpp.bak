@@ -1,0 +1,185 @@
+#include "SM2EncryptPrecompiled.h"
+#include <libethcore/ABI.h>
+#include <libdevcrypto/Common.h>
+#include <libdevcore/CommonData.h>
+#include <openssl/evp.h>
+#include <openssl/ec.h>
+#include <openssl/bn.h>
+#include <openssl/err.h>
+
+using namespace dev;
+using namespace dev::precompiled;
+using namespace dev::eth;
+
+/* ---------- 预编译方法 ---------- */
+const char* const SM2_ENCRYPT_METHOD = "encrypt(string,bytes)";
+const char* const SM2_DECRYPT_METHOD = "decrypt(string,bytes)";
+const char* const SM2_GENKEY_METHOD  = "generateKeyPair()";
+
+SM2EncryptPrecompiled::SM2EncryptPrecompiled() {
+    name2Selector[SM2_ENCRYPT_METHOD] = getFuncSelector(SM2_ENCRYPT_METHOD);
+    name2Selector[SM2_DECRYPT_METHOD] = getFuncSelector(SM2_DECRYPT_METHOD);
+    name2Selector[SM2_GENKEY_METHOD]  = getFuncSelector(SM2_GENKEY_METHOD);
+}
+
+/* ---------- 工具函数 ---------- */
+// EC_POINT → 04||X||Y  Hex
+static void point2hex(const EC_POINT* p, const EC_GROUP* g, char* out, size_t len)
+{
+    BIGNUM *x = BN_new(), *y = BN_new();
+    EC_POINT_get_affine_coordinates_GFp(g, p, x, y, nullptr);
+    char *xHex = BN_bn2hex(x), *yHex = BN_bn2hex(y);
+    snprintf(out, len, "04%.64s%.64s", xHex, yHex);
+    OPENSSL_free(xHex); OPENSSL_free(yHex);
+    BN_free(x); BN_free(y);
+}
+
+// 十六进制字符串 → EVP_PKEY（SM2）
+static EVP_PKEY* hex2pkey(const std::string& hex, bool isPub)
+{
+    EC_KEY* ec = EC_KEY_new_by_curve_name(NID_sm2);
+    const EC_GROUP* grp = EC_KEY_get0_group(ec);
+    BIGNUM* bn = BN_new();
+    BN_hex2bn(&bn, hex.c_str());
+    if (isPub) {
+        EC_POINT* pt = EC_POINT_bn2point(grp, bn, nullptr, nullptr);
+        EC_KEY_set_public_key(ec, pt);
+        EC_POINT_free(pt);
+    } else {
+        EC_KEY_set_private_key(ec, bn);
+    }
+    BN_free(bn);
+    EVP_PKEY* pkey = EVP_PKEY_new();
+    EVP_PKEY_set1_EC_KEY(pkey, ec);
+    EC_KEY_free(ec);
+    return pkey;
+}
+
+// SM2 加密（EVP 自动 ASN1 封装）
+static bytes sm2_encrypt(const std::string& pubHex, const bytes& plain)
+{
+    EVP_PKEY* pkey = hex2pkey(pubHex, true);
+    EVP_PKEY_CTX* ctx = EVP_PKEY_CTX_new(pkey, nullptr);
+    EVP_PKEY_encrypt_init(ctx);
+    size_t outlen = 0;
+    EVP_PKEY_encrypt(ctx, nullptr, &outlen, plain.data(), plain.size());
+    bytes cipher(outlen);
+    if (EVP_PKEY_encrypt(ctx, cipher.data(), &outlen, plain.data(), plain.size()) <= 0)
+        throw std::runtime_error("EVP_PKEY_encrypt failed");
+    EVP_PKEY_CTX_free(ctx);
+    EVP_PKEY_free(pkey);
+    return cipher;
+}
+
+// SM2 解密（EVP 自动 ASN1 解封）
+static bytes sm2_decrypt(const std::string& priHex, const bytes& cipher)
+{
+    EVP_PKEY* pkey = hex2pkey(priHex, false);
+    EVP_PKEY_CTX* ctx = EVP_PKEY_CTX_new(pkey, nullptr);
+    EVP_PKEY_decrypt_init(ctx);
+    size_t outlen = 0;
+    EVP_PKEY_decrypt(ctx, nullptr, &outlen, cipher.data(), cipher.size());
+    bytes plain(outlen);
+    if (EVP_PKEY_decrypt(ctx, plain.data(), &outlen, cipher.data(), cipher.size()) <= 0)
+        throw std::runtime_error("EVP_PKEY_decrypt failed");
+    EVP_PKEY_CTX_free(ctx);
+    EVP_PKEY_free(pkey);
+    return plain;
+}
+
+/* ---------- 密钥生成 ---------- */
+static std::pair<std::string, std::string> generateSM2KeyPair()
+{
+    EVP_PKEY_CTX *ctx = EVP_PKEY_CTX_new_id(EVP_PKEY_EC, nullptr);
+    if (!ctx) throw std::runtime_error("EVP_PKEY_CTX_new_id failed");
+
+    if (EVP_PKEY_keygen_init(ctx) <= 0) {
+        EVP_PKEY_CTX_free(ctx);
+        throw std::runtime_error("EVP_PKEY_keygen_init failed");
+    }
+    if (EVP_PKEY_CTX_set_ec_paramgen_curve_nid(ctx, NID_sm2) <= 0) {
+        EVP_PKEY_CTX_free(ctx);
+        throw std::runtime_error("set_ec_paramgen_curve_nid failed");
+    }
+
+    EVP_PKEY *pkey = nullptr;
+    if (EVP_PKEY_keygen(ctx, &pkey) <= 0) {
+        EVP_PKEY_CTX_free(ctx);
+        throw std::runtime_error("EVP_PKEY_keygen failed");
+    }
+    EVP_PKEY_CTX_free(ctx);
+
+    EC_KEY *ec = EVP_PKEY_get1_EC_KEY(pkey);
+    if (!ec) {
+        EVP_PKEY_free(pkey);
+        throw std::runtime_error("EVP_PKEY_get1_EC_KEY failed");
+    }
+    const EC_POINT *pub = EC_KEY_get0_public_key(ec);
+    const BIGNUM     *pri = EC_KEY_get0_private_key(ec);
+    const EC_GROUP   *grp = EC_KEY_get0_group(ec);
+
+    char pubHex[131] = {0};   // 04 + 64 + 64 + '\0'
+    point2hex(pub, grp, pubHex, sizeof(pubHex));
+
+    char priHex[65] = {0};
+    char *tmp = BN_bn2hex(pri);
+    if (tmp) {
+        int len = strlen(tmp);
+        if (len < 64) {
+            memset(priHex, '0', 64 - len);
+            strcpy(priHex + 64 - len, tmp);
+        } else {
+            strncpy(priHex, tmp, 64);
+        }
+        OPENSSL_free(tmp);
+    }
+
+    EVP_PKEY_free(pkey);
+    EC_KEY_free(ec);
+
+    return {std::string(pubHex), std::string(priHex)};
+}
+
+/* ---------- 主调用函数 ---------- */
+PrecompiledExecResult::Ptr SM2EncryptPrecompiled::call(
+    std::shared_ptr<dev::blockverifier::ExecutiveContext>,
+    bytesConstRef _param,
+    Address const&,
+    Address const&)
+{
+    uint32_t func = getParamFunc(_param);
+    bytesConstRef data = getParamData(_param);
+    auto result = m_precompiledExecResultFactory->createPrecompiledResult();
+    ContractABI abi;
+
+    try {
+        if (func == name2Selector[SM2_GENKEY_METHOD]) {
+            auto keyPair = generateSM2KeyPair();
+            result->setExecResult(abi.abiIn("", keyPair.first, keyPair.second));
+        }
+        else if (func == name2Selector[SM2_ENCRYPT_METHOD]) {
+            std::string pubHex; bytes plain;
+            abi.abiOut(data, pubHex, plain);
+            if (pubHex.empty() || plain.empty())
+                throw std::runtime_error("empty input");
+            bytes cipher = sm2_encrypt(pubHex, plain);
+            result->setExecResult(abi.abiIn("", cipher));
+        }
+        else if (func == name2Selector[SM2_DECRYPT_METHOD]) {
+            std::string priHex; bytes cipher;
+            abi.abiOut(data, priHex, cipher);
+            if (priHex.empty() || cipher.empty())
+                throw std::runtime_error("empty input");
+            bytes plain = sm2_decrypt(priHex, cipher);
+            result->setExecResult(abi.abiIn("", plain));
+        }
+        else {
+            BOOST_THROW_EXCEPTION(PrecompiledException("Unknown function"));
+        }
+    }
+    catch (const std::exception& e) {
+        PRECOMPILED_LOG(ERROR) << "SM2EncryptPrecompiled exception:" << e.what();
+        BOOST_THROW_EXCEPTION(PrecompiledException(e.what()));
+    }
+    return result;
+}
