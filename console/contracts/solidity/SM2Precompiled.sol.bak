@@ -1,0 +1,8 @@
+pragma solidity ^0.4.25;
+
+contract SM2Precompiled {
+    function generateKeyPair() public constant returns(string, string);
+    function encrypt(string pubHex, bytes plaintext) public constant returns(bytes);
+    function decrypt(string priHex, bytes ciphertext) public constant returns(bytes);
+    //function encrypt(string pubHex, bytes plaintext) public constant returns(uint256);
+}

@@ -1,0 +1,148 @@
+info|2025-10-10 08:00:00.171858|Sync-1-0x00007fb943f00700|[g:1][SYNC][id:064cb676...]print sync info,peersCount=3,infoJson={"blockNumber":315,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","isSyncing":false,"knownHighestNumber":315,"knownLatestHash":"6da5d8129026a9c6b924c5f9a6f6408b040396ac6282badd756c7a1d307b982e","latestHash":"6da5d8129026a9c6b924c5f9a6f6408b040396ac6282badd756c7a1d307b982e","nodeId":"064cb676a36047a4b52ecbf9c01664b1e987d91b438110ba6a12d96972726622e824d295b1de8b0298b5afe7bbbc0bd04a3890e1a36eae028c1cfbe07971b995","peers":[{"blockNumber":183,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","latestHash":"84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d","nodeId":"374bdfe969e1d8ea1200ade93e5d8cf1a7d5741f238011004b0f43ca818706f194b2f067e1708125f7ffc536610b9a72addbd56b238d65f18912be39037ffcc5"},{"blockNumber":315,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","latestHash":"6da5d8129026a9c6b924c5f9a6f6408b040396ac6282badd756c7a1d307b982e","nodeId":"73994dae9e8b8da733108a4153dfe79151d701dff425f84c87b5324e8ebd02ab6a0ebc9e4f1e0298a7ddca50f94a8f95c62b6997226d571e470e8f2b0600634a"},{"blockNumber":315,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","latestHash":"6da5d8129026a9c6b924c5f9a6f6408b040396ac6282badd756c7a1d307b982e","nodeId":"87d00b98321fc70a5abc85ad9e80db10cce315194133697bf74aace1d3f8430957a766240f751752708f4282f46110d6ea56c3eb5d1c02ce98a66f327f595270"}],"protocolId":65545,"txPoolSize":"1"}
+info|2025-10-10 08:00:08.665830|P2P-0x00007fb95df34700|[g:1] [SYNC][id:064cb676...][Download][Request]Receive block request,peer=374bdfe9...,from=184,to=184
+info|2025-10-10 08:00:08.666631|SyncSend-1-0x00007fb94ef16700|[g:1][SYNC][id:064cb676...][Download][Request][BlockSync]Batch blocks for sending,blockSize=24480,number=184,peer=374bdfe9...,timeCost=0
+info|2025-10-10 08:00:08.666756|SyncSend-1-0x00007fb94ef16700|[g:1][g:1] [SYNC][id:374bdfe9...][Download][Request][BlockSync]Send block packet,peer=374bdfe9...,blocks=1,bytes(V)=24487
+info|2025-10-10 08:00:09.513380|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:00:19.513825|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+warning|2025-10-10 08:00:28.146925|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=10,toV=11,curNum=315,hash=6da5d812...,nodeIdx=0,myNode=064cb676...
+info|2025-10-10 08:00:28.148517|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=10,toView=11,nodeIdx=0,changeCycle=8,myNode=064cb676...,timecost=3
+info|2025-10-10 08:00:28.149885|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=10,cur_changeCycle=8,curView=10,view=11
+info|2025-10-10 08:00:28.673485|PBFTWork-1-0x00007fb948f0a700|[g:1][CONSENSUS][PartiallyPBFTReqCache]addPartiallyRawPrepare,height=316,reqIdx=2,hash=cd1cde7b...
+info|2025-10-10 08:00:28.673837|PBFTWork-1-0x00007fb948f0a700|[g:1][CONSENSUS][PBFT]I am the next leader = 0, filter trans size = 1, total trans = 1
+info|2025-10-10 08:00:28.674260|PBFTWork-1-0x00007fb948f0a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=316,parentHash=6da5d8129026a9c6b924c5f9a6f6408b040396ac6282badd756c7a1d307b982e,parentNum=315,parentStateRoot=a87833d74143e8df2bd677ee6923f4d0a0a803bd7e009c464543c6f44e888c23
+info|2025-10-10 08:00:28.674455|PBFTWork-1-0x00007fb948f0a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-10 08:00:28.695058|SyncMsgE-1-0x00007fb93bef0700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760108428695
+info|2025-10-10 08:00:28.701717|SyncMsgE-1-0x00007fb93bef0700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760108428701
+info|2025-10-10 08:00:28.701932|PBFTWork-1-0x00007fb948f0a700|[g:1][CONSENSUS][PBFT]execBlock,blkNum=316,reqIdx=2,hash=77bb5bfb...,nodeIdx=0,myNode=064cb676...,decodeCost=0,checkCost=0,notifyCost=0,noteSealingCost=1,currentCycle=8,verifyAndSetSenderCost=0,execCost=27,execPerTx=27,totalCost=29
+info|2025-10-10 08:00:28.709898|PBFTWork-1-0x00007fb948f0a700|[g:1][CONSENSUS][PBFT]handlePrepareMsg Succ,timecost=7,INFO=handlePartiallyPrepare,reqIdx=2,view=11,reqNum=316,curNum=315,consNum=316,hash=cd1cde7b...,nodeIdx=0,myNode=064cb676...,curChangeCycle=8
+info|2025-10-10 08:00:28.709965|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]checkReq: Recv future request,prepHash=77bb5bfb...,INFO=handleSignMsg,num=316,curNum=315,GenIdx=2,Sview=11,view=11,fromIdx=2,fromNode=73994dae...,fromIp=127.0.0.1:56868,hash=66fb4008...,nodeIdx=0,myNode=064cb676...
+info|2025-10-10 08:00:28.709976|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]FutureBlock,INFO=handleSignMsg,num=316,curNum=315,GenIdx=2,Sview=11,view=11,fromIdx=2,fromNode=73994dae...,fromIp=127.0.0.1:56868,hash=66fb4008...,nodeIdx=0,myNode=064cb676...
+info|2025-10-10 08:00:28.711221|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]handleSignMsg Succ,Timecost=2,INFO=handleSignMsg,num=316,curNum=315,GenIdx=3,Sview=11,view=11,fromIdx=3,fromNode=87d00b98...,fromIp=127.0.0.1:30302,hash=77bb5bfb...,nodeIdx=0,myNode=064cb676...
+info|2025-10-10 08:00:29.514747|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:00:34.284889|P2P-0x00007fb95e735700|[g:1] [SYNC][id:064cb676...][Download][Request]Receive block request,peer=374bdfe9...,from=184,to=184
+info|2025-10-10 08:00:34.285596|SyncSend-1-0x00007fb94ef16700|[g:1][SYNC][id:064cb676...][Download][Request][BlockSync]Batch blocks for sending,blockSize=24480,number=184,peer=374bdfe9...,timeCost=0
+info|2025-10-10 08:00:34.285745|SyncSend-1-0x00007fb94ef16700|[g:1][g:1] [SYNC][id:374bdfe9...][Download][Request][BlockSync]Send block packet,peer=374bdfe9...,blocks=1,bytes(V)=24487
+info|2025-10-10 08:00:39.515405|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:00:49.515773|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:00:59.515922|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:01:09.516343|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:01:19.516656|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:01:29.517658|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:01:38.939449|P2P-0x00007fb95df34700|[g:1] [SYNC][id:064cb676...][Download][Request]Receive block request,peer=374bdfe9...,from=184,to=184
+info|2025-10-10 08:01:38.940176|SyncSend-1-0x00007fb94ef16700|[g:1][SYNC][id:064cb676...][Download][Request][BlockSync]Batch blocks for sending,blockSize=24480,number=184,peer=374bdfe9...,timeCost=1
+info|2025-10-10 08:01:38.940303|SyncSend-1-0x00007fb94ef16700|[g:1][g:1] [SYNC][id:374bdfe9...][Download][Request][BlockSync]Send block packet,peer=374bdfe9...,blocks=1,bytes(V)=24487
+info|2025-10-10 08:01:39.518085|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:01:45.595504|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][SEALER]decrease maxBlockCanSeal to half for PBFT timeout,org_maxBlockCanSeal=30,halfed_maxBlockCanSeal=15,timeoutCount=6,lastTimeoutTx=1
+warning|2025-10-10 08:01:45.598502|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=11,toV=12,curNum=315,hash=6da5d812...,nodeIdx=0,myNode=064cb676...
+info|2025-10-10 08:01:45.600207|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=11,toView=12,nodeIdx=0,changeCycle=9,myNode=064cb676...,timecost=5
+info|2025-10-10 08:01:45.602978|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]checkAndChangeView: Reach consensus,org_view=11,cur_changeCycle=9,curView=11,view=12
+info|2025-10-10 08:01:46.115598|PBFTWork-1-0x00007fb948f0a700|[g:1][CONSENSUS][PartiallyPBFTReqCache]addPartiallyRawPrepare,height=316,reqIdx=3,hash=895e5b12...
+info|2025-10-10 08:01:46.116449|PBFTWork-1-0x00007fb948f0a700|[g:1][CONSENSUS][PBFT]I am the next leader = 0, filter trans size = 1, total trans = 1
+info|2025-10-10 08:01:46.117766|PBFTWork-1-0x00007fb948f0a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=316,parentHash=6da5d8129026a9c6b924c5f9a6f6408b040396ac6282badd756c7a1d307b982e,parentNum=315,parentStateRoot=a87833d74143e8df2bd677ee6923f4d0a0a803bd7e009c464543c6f44e888c23
+info|2025-10-10 08:01:46.118486|PBFTWork-1-0x00007fb948f0a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-10 08:01:46.125367|SyncMsgE-1-0x00007fb93bef0700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760108506125
+info|2025-10-10 08:01:46.127691|SyncMsgE-1-0x00007fb93bef0700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760108506127
+info|2025-10-10 08:01:46.140981|PBFTWork-1-0x00007fb948f0a700|[g:1][CONSENSUS][PBFT]execBlock,blkNum=316,reqIdx=3,hash=4fdf36a6...,nodeIdx=0,myNode=064cb676...,decodeCost=0,checkCost=1,notifyCost=0,noteSealingCost=1,currentCycle=9,verifyAndSetSenderCost=0,execCost=23,execPerTx=23,totalCost=26
+info|2025-10-10 08:01:46.146300|PBFTWork-1-0x00007fb948f0a700|[g:1][CONSENSUS][PBFT]handlePrepareMsg Succ,timecost=5,INFO=handlePartiallyPrepare,reqIdx=3,view=12,reqNum=316,curNum=315,consNum=316,hash=895e5b12...,nodeIdx=0,myNode=064cb676...,curChangeCycle=9
+info|2025-10-10 08:01:46.147018|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]checkReq: Recv future request,prepHash=4fdf36a6...,INFO=handleSignMsg,num=316,curNum=315,GenIdx=2,Sview=12,view=12,fromIdx=2,fromNode=73994dae...,fromIp=127.0.0.1:56868,hash=d0728e00...,nodeIdx=0,myNode=064cb676...
+info|2025-10-10 08:01:46.147042|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]FutureBlock,INFO=handleSignMsg,num=316,curNum=315,GenIdx=2,Sview=12,view=12,fromIdx=2,fromNode=73994dae...,fromIp=127.0.0.1:56868,hash=d0728e00...,nodeIdx=0,myNode=064cb676...
+info|2025-10-10 08:01:46.147062|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]checkReq: Recv future request,prepHash=4fdf36a6...,INFO=handleSignMsg,num=316,curNum=315,GenIdx=3,Sview=12,view=12,fromIdx=3,fromNode=87d00b98...,fromIp=127.0.0.1:30302,hash=4e164588...,nodeIdx=0,myNode=064cb676...
+info|2025-10-10 08:01:46.147070|PBFT-1-0x00007fb9426fd700|[g:1][CONSENSUS][PBFT]FutureBlock,INFO=handleSignMsg,num=316,curNum=315,GenIdx=3,Sview=12,view=12,fromIdx=3,fromNode=87d00b98...,fromIp=127.0.0.1:30302,hash=4e164588...,nodeIdx=0,myNode=064cb676...
+info|2025-10-10 08:01:49.519406|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:01:51.914254|P2P-0x00007fb95df34700|[g:1] [SYNC][id:064cb676...][Download][Request]Receive block request,peer=374bdfe9...,from=184,to=184
+info|2025-10-10 08:01:51.915062|SyncSend-1-0x00007fb94ef16700|[g:1][SYNC][id:064cb676...][Download][Request][BlockSync]Batch blocks for sending,blockSize=24480,number=184,peer=374bdfe9...,timeCost=1
+info|2025-10-10 08:01:51.915226|SyncSend-1-0x00007fb94ef16700|[g:1][g:1] [SYNC][id:374bdfe9...][Download][Request][BlockSync]Send block packet,peer=374bdfe9...,blocks=1,bytes(V)=24487
+info|2025-10-10 08:01:59.519964|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:02:09.520485|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:02:11.171040|P2P-0x00007fb95d733700|[g:1] [SYNC][id:064cb676...][Download][Request]Receive block request,peer=374bdfe9...,from=184,to=184
+info|2025-10-10 08:02:11.171712|SyncSend-1-0x00007fb94ef16700|[g:1][SYNC][id:064cb676...][Download][Request][BlockSync]Batch blocks for sending,blockSize=24480,number=184,peer=374bdfe9...,timeCost=0
+info|2025-10-10 08:02:11.171967|SyncSend-1-0x00007fb94ef16700|[g:1][g:1] [SYNC][id:374bdfe9...][Download][Request][BlockSync]Send block packet,peer=374bdfe9...,blocks=1,bytes(V)=24487
+info|2025-10-10 08:02:17.576869|P2P-0x00007fb95e735700|[g:1] [SYNC][id:064cb676...][Download][Request]Receive block request,peer=374bdfe9...,from=184,to=184
+info|2025-10-10 08:02:17.578102|SyncSend-1-0x00007fb94ef16700|[g:1][SYNC][id:064cb676...][Download][Request][BlockSync]Batch blocks for sending,blockSize=24480,number=184,peer=374bdfe9...,timeCost=1
+info|2025-10-10 08:02:17.578316|SyncSend-1-0x00007fb94ef16700|[g:1][g:1] [SYNC][id:374bdfe9...][Download][Request][BlockSync]Send block packet,peer=374bdfe9...,blocks=1,bytes(V)=24487
+info|2025-10-10 08:02:19.521081|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:02:29.522019|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:02:30.384773|P2P-0x00007fb95e735700|[g:1] [SYNC][id:064cb676...][Download][Request]Receive block request,peer=374bdfe9...,from=184,to=184
+info|2025-10-10 08:02:30.385470|SyncSend-1-0x00007fb94ef16700|[g:1][SYNC][id:064cb676...][Download][Request][BlockSync]Batch blocks for sending,blockSize=24480,number=184,peer=374bdfe9...,timeCost=0
+info|2025-10-10 08:02:30.385671|SyncSend-1-0x00007fb94ef16700|[g:1][g:1] [SYNC][id:374bdfe9...][Download][Request][BlockSync]Send block packet,peer=374bdfe9...,blocks=1,bytes(V)=24487
+info|2025-10-10 08:02:39.522370|io_service-0x00007fb95c731700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-10 08:02:47.605751|fisco-bcos-0x00007fb95f4aadc0|[LEDGER]stop sealer,groupID=1
+info|2025-10-10 08:02:47.605848|fisco-bcos-0x00007fb95f4aadc0|[CONSENSUS][SEALER]Stop sealer module...
+info|2025-10-10 08:02:47.608005|fisco-bcos-0x00007fb95f4aadc0|[CONSENSUS][ConsensusEngine][Stop ConsensusEngineBase]
+info|2025-10-10 08:02:47.611152|fisco-bcos-0x00007fb95f4aadc0|[CONSENSUS][ConsensusEngine]ConsensusEngineBase stopped
+info|2025-10-10 08:02:47.611232|fisco-bcos-0x00007fb95f4aadc0|[LEDGER]sealer stopped. stop sync,groupID=1
+info|2025-10-10 08:02:47.611924|fisco-bcos-0x00007fb95f4aadc0|[g:1] [SYNC][id:064cb676...]SyncMsgEngine stopped
+info|2025-10-10 08:02:47.697958|fisco-bcos-0x00007fb95f4aadc0|[GossipBlockStatus]stop GossipBlockStatus succ
+info|2025-10-10 08:02:48.058512|fisco-bcos-0x00007fb95f4aadc0|[SYNC][id:064cb676...][g:1]SyncMaster stopped
+info|2025-10-10 08:02:48.058554|fisco-bcos-0x00007fb95f4aadc0|[LEDGER]sync stopped. stop event filter manager,groupID=1
+info|2025-10-10 08:02:48.062045|fisco-bcos-0x00007fb95f4aadc0|[EVENT][EventLogFilterManager]stop
+info|2025-10-10 08:02:48.062083|fisco-bcos-0x00007fb95f4aadc0|[LEDGER]event filter manager stopped. stop tx pool,groupID=1
+info|2025-10-10 08:02:48.062598|fisco-bcos-0x00007fb95f4aadc0|[LEDGER]removeNetworkStatHandlerByGroupID and removeGroupBandwidthLimiter for service,groupID=1
+info|2025-10-10 08:02:48.062637|fisco-bcos-0x00007fb95f4aadc0|[CHANNEL]removeSDKAllowListByGroupId,groupId=1
+info|2025-10-10 08:02:48.062655|fisco-bcos-0x00007fb95f4aadc0|[INITIALIZER]ledgerInitializer stopped
+warning|2025-10-10 08:02:48.062753|ChannelServer-0x00007fb95371f700|[CHANNEL]Accept failed,message=Operation canceled
+warning|2025-10-10 08:02:48.062901|ChannelServer-0x00007fb95371f700|[CHANNEL]Accept failed,message=Operation canceled
+info|2025-10-10 08:02:48.062940|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063003|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063034|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063089|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063114|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063143|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063161|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063188|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063211|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063280|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063314|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063344|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063365|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063410|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063438|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063466|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063486|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063510|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063528|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063555|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063574|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063600|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063620|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063647|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063666|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063692|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063710|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063734|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063755|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063779|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063801|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063826|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063847|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063876|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063896|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063921|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063938|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.063964|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.063983|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.064007|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.064025|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.064197|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:48.064244|ChannelServer-0x00007fb95371f700|[CHANNEL]Receive new connection,from=0.0.0.0:0
+warning|2025-10-10 08:02:48.064291|ChannelServer-0x00007fb95371f700|[CHANNEL]SSL handshake error,remoteHost=0.0.0.0,remotePort=0,message=Bad file descriptor
+info|2025-10-10 08:02:49.064980|fisco-bcos-0x00007fb95f4aadc0|[INITIALIZER]ChannelRPCHttpServer deleted.
+info|2025-10-10 08:02:49.065862|fisco-bcos-0x00007fb95f4aadc0|[INITIALIZER]JsonrpcHttpServer deleted.
+info|2025-10-10 08:02:49.065910|fisco-bcos-0x00007fb95f4aadc0|[INITIALIZER]RPCInitializer stopped
+info|2025-10-10 08:02:49.065962|io_service-0x00007fb95c731700|[NETWORK][Host]Host exit
+info|2025-10-10 08:02:49.067720|fisco-bcos-0x00007fb95f4aadc0|[INITIALIZER]P2PInitializer stopped
+info|2025-10-10 08:02:49.067764|fisco-bcos-0x00007fb95f4aadc0|[LEDGER]stop sealer,groupID=1
+info|2025-10-10 08:02:49.067777|fisco-bcos-0x00007fb95f4aadc0|[LEDGER]sealer stopped. stop sync,groupID=1
+info|2025-10-10 08:02:49.067794|fisco-bcos-0x00007fb95f4aadc0|[g:1] [SYNC][id:064cb676...]SyncMsgEngine stopped
+info|2025-10-10 08:02:49.067811|fisco-bcos-0x00007fb95f4aadc0|[GossipBlockStatus]GossipBlockStatus already stopped
+info|2025-10-10 08:02:49.067821|fisco-bcos-0x00007fb95f4aadc0|[SYNC][id:064cb676...][g:1]SyncMaster stopped
+info|2025-10-10 08:02:49.067832|fisco-bcos-0x00007fb95f4aadc0|[LEDGER]sync stopped. stop event filter manager,groupID=1
+info|2025-10-10 08:02:49.067840|fisco-bcos-0x00007fb95f4aadc0|[LEDGER]event filter manager stopped. stop tx pool,groupID=1
+info|2025-10-10 08:02:49.067853|fisco-bcos-0x00007fb95f4aadc0|[LEDGER]removeNetworkStatHandlerByGroupID and removeGroupBandwidthLimiter for service,groupID=1
+info|2025-10-10 08:02:49.067873|fisco-bcos-0x00007fb95f4aadc0|[g:1][STORAGE][CachedStorage]Stopping flushStorage thread
+info|2025-10-10 08:02:49.867462|fisco-bcos-0x00007fb95f4aadc0|[g:1][STORAGE][CachedStorage]flushStorage thread stopped.
+info|2025-10-10 08:02:49.867520|fisco-bcos-0x00007fb95f4aadc0|[DBINITIALIZER] storage stopped
+info|2025-10-10 08:02:49.879672|fisco-bcos-0x00007fb95f4aadc0|[g:1] [SYNC][id:064cb676...]SyncMsgEngine stopped
+info|2025-10-10 08:02:49.879776|fisco-bcos-0x00007fb95f4aadc0|[GossipBlockStatus]GossipBlockStatus already stopped
+info|2025-10-10 08:02:49.879788|fisco-bcos-0x00007fb95f4aadc0|[SYNC][id:064cb676...][g:1]SyncMaster stopped
+info|2025-10-10 08:02:49.879817|fisco-bcos-0x00007fb95f4aadc0|[g:1] [SYNC][id:064cb676...]SyncMsgEngine stopped

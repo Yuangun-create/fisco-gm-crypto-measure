@@ -1,0 +1,64 @@
+pragma solidity ^0.4.25;
+
+contract TimerPrecompiled {
+    function getCurrentTimeMillis() public constant returns(uint256);
+}
+
+contract SM2EncryptPrecompiled {
+    function encrypt(bytes plaintext) public constant returns(bytes text);
+}
+
+contract SM2Speed {
+    TimerPrecompiled  timer;
+    SM2EncryptPrecompiled sm2;
+
+    uint public constant DATA_SIZE = 1 * 1024; // 20 KB
+    uint public constant CHUNK_SIZE = 1024;
+    
+    event EncryptSpeed(bytes ret, uint Mbps, uint elapsedMs);
+
+    constructor() public {
+        timer = TimerPrecompiled(0x500c);
+        sm2 = SM2EncryptPrecompiled(0x500b);
+    }
+
+    // 生成测试数据
+    function generateTestData1() private returns (bytes memory) {
+        bytes memory testData = new bytes(DATA_SIZE);
+        bytes memory chunkData = new bytes(CHUNK_SIZE);
+        
+        for (uint i = 0; i < CHUNK_SIZE; i++) {
+            chunkData[i] = byte(uint8(i % 256));
+        }
+
+        uint repeatCount = DATA_SIZE / CHUNK_SIZE;
+        for (uint j = 0; j < repeatCount; j++) {
+            for (uint k = 0; k < CHUNK_SIZE; k++) {
+                testData[j * CHUNK_SIZE + k] = chunkData[j];
+            }
+        }
+        return testData;
+    }
+    
+    function generateTestData() private returns (bytes memory) {
+        bytes memory testData = new bytes(DATA_SIZE);
+        for (uint i = 0; i < DATA_SIZE; i++) {
+            testData[i] = byte(uint8(i % 256));
+        }
+        return testData;
+    }
+    
+    // 测试加密速度
+    function test() public returns (uint Mbps, uint elapsedMs) {
+        bytes memory testData = generateTestData();
+        uint256 start = timer.getCurrentTimeMillis();
+        bytes memory r = sm2.encrypt(testData);
+        uint256 end = timer.getCurrentTimeMillis();
+
+        elapsedMs = end - start;
+        if (elapsedMs > 0) {
+            Mbps = (DATA_SIZE * 8) / (elapsedMs * 1000);
+        }
+        emit EncryptSpeed(r, Mbps, elapsedMs);
+    }
+}

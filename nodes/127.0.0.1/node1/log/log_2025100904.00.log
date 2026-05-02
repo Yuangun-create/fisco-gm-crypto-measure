@@ -1,0 +1,208 @@
+info|2025-10-09 04:00:00.124451|Sync-1-0x00007f0edb483700|[g:1][SYNC][id:374bdfe9...]print sync info,peersCount=3,infoJson={"blockNumber":175,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","isSyncing":true,"knownHighestNumber":192,"knownLatestHash":"466e07fc4a2b101ac923bc60198c8b90117775911a74d6ed2adaeb27c41eaeda","latestHash":"ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c","nodeId":"374bdfe969e1d8ea1200ade93e5d8cf1a7d5741f238011004b0f43ca818706f194b2f067e1708125f7ffc536610b9a72addbd56b238d65f18912be39037ffcc5","peers":[{"blockNumber":192,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","latestHash":"466e07fc4a2b101ac923bc60198c8b90117775911a74d6ed2adaeb27c41eaeda","nodeId":"064cb676a36047a4b52ecbf9c01664b1e987d91b438110ba6a12d96972726622e824d295b1de8b0298b5afe7bbbc0bd04a3890e1a36eae028c1cfbe07971b995"},{"blockNumber":192,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","latestHash":"466e07fc4a2b101ac923bc60198c8b90117775911a74d6ed2adaeb27c41eaeda","nodeId":"73994dae9e8b8da733108a4153dfe79151d701dff425f84c87b5324e8ebd02ab6a0ebc9e4f1e0298a7ddca50f94a8f95c62b6997226d571e470e8f2b0600634a"},{"blockNumber":192,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","latestHash":"466e07fc4a2b101ac923bc60198c8b90117775911a74d6ed2adaeb27c41eaeda","nodeId":"87d00b98321fc70a5abc85ad9e80db10cce315194133697bf74aace1d3f8430957a766240f751752708f4282f46110d6ea56c3eb5d1c02ce98a66f327f595270"}],"protocolId":65545,"txPoolSize":"2"}
+info|2025-10-09 04:00:00.510862|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=192,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=fce96781...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:04.327765|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=064cb676...
+info|2025-10-09 04:00:04.333243|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:00:04.333286|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:00:04.333433|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:00:04.346658|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007604346
+error|2025-10-09 04:00:04.347801|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:00:04.347891|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:00:04.348042|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:00:04.348147|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:00:05.555362|io_service-0x00007f0ef3cb4700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-09 04:00:06.032225|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=2,view=194,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42054,hash=4b290267...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:07.043578|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=3,view=195,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42044,hash=5d8eb03f...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:08.063692|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=196,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=a3ee886a...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:10.731737|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=064cb676...
+info|2025-10-09 04:00:10.735958|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:00:10.736091|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:00:10.736233|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:00:10.750029|Download-1-0x00007f0ed8c7e700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007610750
+error|2025-10-09 04:00:10.751424|Download-1-0x00007f0ed8c7e700|[EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:00:10.751531|Download-1-0x00007f0ed8c7e700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:00:10.751773|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:00:10.751873|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:00:13.581766|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=2,view=198,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42054,hash=9c55ebe1...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:14.597224|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=3,view=199,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42044,hash=003e9b7a...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:15.556205|io_service-0x00007f0ef3cb4700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-09 04:00:15.625984|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=200,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=43a40494...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:17.135442|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=064cb676...
+info|2025-10-09 04:00:17.139396|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:00:17.139482|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:00:17.139610|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:00:17.150124|Download-1-0x00007f0ed8c7e700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007617150
+error|2025-10-09 04:00:17.151096|Download-1-0x00007f0ed8c7e700|[EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:00:17.151182|Download-1-0x00007f0ed8c7e700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:00:17.151420|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:00:17.151540|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:00:21.175070|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=2,view=202,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42054,hash=e1f71074...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:22.192128|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=3,view=203,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42044,hash=f7d835a0...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:23.206323|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=204,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=56b5a88d...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:23.539868|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=73994dae...
+info|2025-10-09 04:00:23.544970|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:00:23.545050|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:00:23.547601|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:00:23.584383|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007623584
+error|2025-10-09 04:00:23.588348|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:00:23.588453|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:00:23.591570|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:00:23.591771|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:00:25.556655|io_service-0x00007f0ef3cb4700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-09 04:00:28.786501|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=2,view=206,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42054,hash=5ba5b1d4...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:29.805384|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=3,view=207,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42044,hash=3786054a...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:29.941486|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=064cb676...
+info|2025-10-09 04:00:29.945291|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:00:29.945324|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:00:29.945489|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:00:29.959578|Download-1-0x00007f0ed8c7e700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007629959
+error|2025-10-09 04:00:29.960817|Download-1-0x00007f0ed8c7e700|[EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:00:29.960923|Download-1-0x00007f0ed8c7e700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:00:29.961085|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:00:29.961186|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:00:30.824439|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=208,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=17d5bee2...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:35.557489|io_service-0x00007f0ef3cb4700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-09 04:00:36.349129|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=87d00b98...
+info|2025-10-09 04:00:36.353172|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:00:36.353205|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:00:36.353351|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:00:36.360144|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=2,view=210,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42054,hash=d3eb87f4...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:36.384257|Download-1-0x00007f0ed8c7e700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007636384
+error|2025-10-09 04:00:36.385505|Download-1-0x00007f0ed8c7e700|[EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:00:36.385590|Download-1-0x00007f0ed8c7e700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:00:36.387275|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:00:36.387385|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:00:37.387626|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=3,view=211,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42044,hash=3b558053...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:38.399980|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=212,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=2df730d3...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:42.759502|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=87d00b98...
+info|2025-10-09 04:00:42.763507|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:00:42.763690|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:00:42.763894|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:00:42.777428|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007642777
+error|2025-10-09 04:00:42.778614|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:00:42.778690|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:00:42.778872|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:00:42.778977|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:00:43.929256|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=2,view=214,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42054,hash=561e4d50...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:44.943003|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=3,view=215,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42044,hash=e3823cd3...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:45.557721|io_service-0x00007f0ef3cb4700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-09 04:00:45.959912|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=216,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=fdcbc92c...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:49.254724|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=064cb676...
+info|2025-10-09 04:00:49.258653|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:00:49.258690|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:00:49.258827|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:00:49.276304|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007649276
+error|2025-10-09 04:00:49.277710|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:00:49.277787|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:00:49.277954|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:00:49.278076|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:00:51.521485|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=2,view=218,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42054,hash=f03738fc...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:52.536512|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=3,view=219,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42044,hash=fcee3d79...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:53.548867|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=220,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=e8311e16...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:00:55.558108|io_service-0x00007f0ef3cb4700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-09 04:00:55.765320|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=064cb676...
+info|2025-10-09 04:00:55.768830|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:00:55.768866|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:00:55.768978|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:00:55.786989|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007655786
+error|2025-10-09 04:00:55.788216|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:00:55.788314|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:00:55.791379|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:00:55.791517|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:00:59.086442|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=2,view=222,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42054,hash=70e550a7...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:00.102206|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=3,view=223,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42044,hash=3ac40729...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:01.112441|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=224,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=5453f22b...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:02.167994|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=87d00b98...
+info|2025-10-09 04:01:02.171689|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:01:02.171739|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:01:02.171852|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:01:02.187719|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007662187
+error|2025-10-09 04:01:02.188789|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:01:02.188870|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:01:02.189023|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:01:02.189126|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:01:05.558920|io_service-0x00007f0ef3cb4700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-09 04:01:06.641304|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=2,view=226,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42054,hash=d6923fd3...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:07.712952|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=3,view=227,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42044,hash=6f0e6e7b...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:08.710785|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=87d00b98...
+info|2025-10-09 04:01:08.725589|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=228,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=8fbefce9...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:08.757214|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:01:08.757286|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:01:08.757454|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:01:08.770129|Download-1-0x00007f0ed8c7e700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007668770
+error|2025-10-09 04:01:08.771337|Download-1-0x00007f0ed8c7e700|[EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:01:08.771450|Download-1-0x00007f0ed8c7e700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:01:08.771641|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:01:08.771759|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:01:14.249365|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=2,view=230,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42054,hash=393ff61b...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:15.117222|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=73994dae...
+info|2025-10-09 04:01:15.122141|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:01:15.122245|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:01:15.122397|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:01:15.135603|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007675135
+error|2025-10-09 04:01:15.136658|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:01:15.136837|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:01:15.137137|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:01:15.137233|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:01:15.266606|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=3,view=231,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42044,hash=3c887737...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:15.559193|io_service-0x00007f0ef3cb4700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-09 04:01:16.287753|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=232,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=5dcc9f86...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:21.519830|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=176,to=176,peer=064cb676...
+info|2025-10-09 04:01:21.523677|Download-1-0x00007f0ee6c9a700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=176,txs=1,hash=2e8674c7...
+info|2025-10-09 04:01:21.523742|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=176,parentHash=ef824bacbd317ca2e11cfbcd642f933301da3b3e1d15ef13baed3ab93c0edd7c,parentNum=175,parentStateRoot=cc2a5a19f4bc9df0df70255f44a73919b6138915acc939d2511abb280c51165e
+info|2025-10-09 04:01:21.523896|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-09 04:01:21.538067|Download-1-0x00007f0ee6c9a700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1760007681538
+error|2025-10-09 04:01:21.539780|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVECONTEXT][call]Precompiled call error,EINFO=Dynamic exception type: std::runtime_error
+std::exception::what: EVP_PKEY_encrypt failed
+error|2025-10-09 04:01:21.539902|Download-1-0x00007f0ee6c9a700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=1a4f2d28e7f690dcc961f14352a18fddf70eca24abf83b37f1db902acf28e90d
+error|2025-10-09 04:01:21.540336|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=176,originHash=2e8674c7...,curHash=6eeaa3bc...,orgReceipt=553f773b...,curRecepit=374f3c19...,orgTxRoot=fd4d9e53...,curTxRoot=fd4d9e53...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-09 04:01:21.540499|Download-1-0x00007f0ee6c9a700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=176
+info|2025-10-09 04:01:21.825277|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=2,view=234,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42054,hash=8b1b1ab4...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:22.843160|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=3,view=235,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42044,hash=4686add9...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:23.862925|PBFT-1-0x00007f0ed9c80700|[g:1][CONSENSUS][PBFT]FutureBlock,EINFO=handlePrepareMsg,reqIdx=0,view=236,reqNum=193,curNum=175,consNum=176,curView=0,fromIp=127.0.0.1:42046,hash=58368e38...,nodeIdx=1,myNode=374bdfe9...,curChangeCycle=11
+info|2025-10-09 04:01:25.436265|fisco-bcos-0x00007f0ef6a2ddc0|[LEDGER]stop sealer,groupID=1
+info|2025-10-09 04:01:25.436338|fisco-bcos-0x00007f0ef6a2ddc0|[CONSENSUS][SEALER]Stop sealer module...
+info|2025-10-09 04:01:25.444402|fisco-bcos-0x00007f0ef6a2ddc0|[CONSENSUS][ConsensusEngine][Stop ConsensusEngineBase]
+info|2025-10-09 04:01:25.447104|fisco-bcos-0x00007f0ef6a2ddc0|[CONSENSUS][ConsensusEngine]ConsensusEngineBase stopped
+info|2025-10-09 04:01:25.447125|fisco-bcos-0x00007f0ef6a2ddc0|[LEDGER]sealer stopped. stop sync,groupID=1
+info|2025-10-09 04:01:25.447596|fisco-bcos-0x00007f0ef6a2ddc0|[g:1] [SYNC][id:374bdfe9...]SyncMsgEngine stopped
+info|2025-10-09 04:01:25.547025|fisco-bcos-0x00007f0ef6a2ddc0|[GossipBlockStatus]stop GossipBlockStatus succ
+info|2025-10-09 04:01:25.559597|io_service-0x00007f0ef3cb4700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-09 04:01:25.737355|fisco-bcos-0x00007f0ef6a2ddc0|[SYNC][id:374bdfe9...][g:1]SyncMaster stopped
+info|2025-10-09 04:01:25.737386|fisco-bcos-0x00007f0ef6a2ddc0|[LEDGER]sync stopped. stop event filter manager,groupID=1
+info|2025-10-09 04:01:25.838362|fisco-bcos-0x00007f0ef6a2ddc0|[EVENT][EventLogFilterManager]stop
+info|2025-10-09 04:01:25.838419|fisco-bcos-0x00007f0ef6a2ddc0|[LEDGER]event filter manager stopped. stop tx pool,groupID=1
+info|2025-10-09 04:01:25.839718|fisco-bcos-0x00007f0ef6a2ddc0|[LEDGER]removeNetworkStatHandlerByGroupID and removeGroupBandwidthLimiter for service,groupID=1
+info|2025-10-09 04:01:25.839745|fisco-bcos-0x00007f0ef6a2ddc0|[CHANNEL]removeSDKAllowListByGroupId,groupId=1
+info|2025-10-09 04:01:25.839753|fisco-bcos-0x00007f0ef6a2ddc0|[INITIALIZER]ledgerInitializer stopped
+info|2025-10-09 04:01:26.840506|fisco-bcos-0x00007f0ef6a2ddc0|[INITIALIZER]ChannelRPCHttpServer deleted.
+info|2025-10-09 04:01:26.841313|fisco-bcos-0x00007f0ef6a2ddc0|[INITIALIZER]JsonrpcHttpServer deleted.
+info|2025-10-09 04:01:26.841344|fisco-bcos-0x00007f0ef6a2ddc0|[INITIALIZER]RPCInitializer stopped
+info|2025-10-09 04:01:26.841430|io_service-0x00007f0ef3cb4700|[NETWORK][Host]Host exit
+info|2025-10-09 04:01:26.847093|fisco-bcos-0x00007f0ef6a2ddc0|[INITIALIZER]P2PInitializer stopped
+info|2025-10-09 04:01:26.847118|fisco-bcos-0x00007f0ef6a2ddc0|[LEDGER]stop sealer,groupID=1
+info|2025-10-09 04:01:26.847129|fisco-bcos-0x00007f0ef6a2ddc0|[LEDGER]sealer stopped. stop sync,groupID=1
+info|2025-10-09 04:01:26.847137|fisco-bcos-0x00007f0ef6a2ddc0|[g:1] [SYNC][id:374bdfe9...]SyncMsgEngine stopped
+info|2025-10-09 04:01:26.847145|fisco-bcos-0x00007f0ef6a2ddc0|[GossipBlockStatus]GossipBlockStatus already stopped
+info|2025-10-09 04:01:26.847148|fisco-bcos-0x00007f0ef6a2ddc0|[SYNC][id:374bdfe9...][g:1]SyncMaster stopped
+info|2025-10-09 04:01:26.847152|fisco-bcos-0x00007f0ef6a2ddc0|[LEDGER]sync stopped. stop event filter manager,groupID=1
+info|2025-10-09 04:01:26.847155|fisco-bcos-0x00007f0ef6a2ddc0|[LEDGER]event filter manager stopped. stop tx pool,groupID=1
+info|2025-10-09 04:01:26.847161|fisco-bcos-0x00007f0ef6a2ddc0|[LEDGER]removeNetworkStatHandlerByGroupID and removeGroupBandwidthLimiter for service,groupID=1
+info|2025-10-09 04:01:26.847170|fisco-bcos-0x00007f0ef6a2ddc0|[g:1][STORAGE][CachedStorage]Stopping flushStorage thread
+info|2025-10-09 04:01:27.719619|fisco-bcos-0x00007f0ef6a2ddc0|[g:1][STORAGE][CachedStorage]flushStorage thread stopped.
+info|2025-10-09 04:01:27.719662|fisco-bcos-0x00007f0ef6a2ddc0|[DBINITIALIZER] storage stopped
+info|2025-10-09 04:01:27.780902|fisco-bcos-0x00007f0ef6a2ddc0|[g:1] [SYNC][id:374bdfe9...]SyncMsgEngine stopped
+info|2025-10-09 04:01:27.780957|fisco-bcos-0x00007f0ef6a2ddc0|[GossipBlockStatus]GossipBlockStatus already stopped
+info|2025-10-09 04:01:27.780990|fisco-bcos-0x00007f0ef6a2ddc0|[SYNC][id:374bdfe9...][g:1]SyncMaster stopped
+info|2025-10-09 04:01:27.781027|fisco-bcos-0x00007f0ef6a2ddc0|[g:1] [SYNC][id:374bdfe9...]SyncMsgEngine stopped

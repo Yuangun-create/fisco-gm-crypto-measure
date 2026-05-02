@@ -1,0 +1,987 @@
+info|2025-10-27 06:22:41.641487|fisco-bcos-0x00007effe5500dc0|[INITIALIZER][initGlobalConfig],enableCompress=true,compatibilityVersion=2.11.0,versionNumber=34275328,enableStat=false,chainId=1,useSMCrypto=true,IgnoreObserverWriteRequest=false
+info|2025-10-27 06:22:41.642466|fisco-bcos-0x00007effe5500dc0|[INITIALIZER][SecureInitializerGM]get pub of node,nodeID=374bdfe969e1d8ea1200ade93e5d8cf1a7d5741f238011004b0f43ca818706f194b2f067e1708125f7ffc536610b9a72addbd56b238d65f18912be39037ffcc5
+info|2025-10-27 06:22:41.643397|fisco-bcos-0x00007effe5500dc0|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30300
+info|2025-10-27 06:22:41.643505|io_service-0x00007effe2787700|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30301
+info|2025-10-27 06:22:41.643515|fisco-bcos-0x00007effe5500dc0|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30301
+info|2025-10-27 06:22:41.643590|fisco-bcos-0x00007effe5500dc0|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30302
+info|2025-10-27 06:22:41.643627|fisco-bcos-0x00007effe5500dc0|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30303
+info|2025-10-27 06:22:41.643702|fisco-bcos-0x00007effe5500dc0|[P2P][Service] heartBeat,connected count=0
+info|2025-10-27 06:22:41.643738|fisco-bcos-0x00007effe5500dc0|[INITIALIZER][RPCInitializer],network_security.check_cert_issuer=true
+info|2025-10-27 06:22:41.643789|io_service-0x00007effe2787700|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30300
+info|2025-10-27 06:22:41.643874|io_service-0x00007effe2787700|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30301
+info|2025-10-27 06:22:41.643913|io_service-0x00007effe2787700|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30302
+info|2025-10-27 06:22:41.644082|io_service-0x00007effe2787700|[NETWORK][Host]P2P Recv Connect, From=127.0.0.1:44200
+info|2025-10-27 06:22:41.644183|io_service-0x00007effe2787700|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30301
+info|2025-10-27 06:22:41.644457|io_service-0x00007effe2787700|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30303
+info|2025-10-27 06:22:41.644638|fisco-bcos-0x00007effe5500dc0|[CHANNEL][ChannelServer::run],threadPoolSize=8
+info|2025-10-27 06:22:41.644702|fisco-bcos-0x00007effe5500dc0|[CHANNEL]ChannelRPCServer started
+info|2025-10-27 06:22:41.644710|fisco-bcos-0x00007effe5500dc0|[INITIALIZER][RPCInitializer: ChannelRPCHttpServer started.],disableDynamicGroup=false,uncheckGroupMember=false,threadSize=8
+info|2025-10-27 06:22:41.644729|fisco-bcos-0x00007effe5500dc0|[INITIALIZER][LedgerInitializer]initConfig
+info|2025-10-27 06:22:41.644740|fisco-bcos-0x00007effe5500dc0|[LedgerInitializer],groupConfigPath=conf/
+info|2025-10-27 06:22:41.644986|fisco-bcos-0x00007effe5500dc0|[INITIALIZER][initSingleLedger] [GroupId], LedgerConstructor:  1,configFileName=conf/group.1.genesis,dataDir=data/
+info|2025-10-27 06:22:41.645086|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][parseGenesisConfig]initConsensusConfig/initStorageConfig/initTxConfig,configFile=conf/group.1.genesis
+info|2025-10-27 06:22:41.645104|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initConsensusConfig],type=pbft,consensusTimeout=3,maxTxNum=1000,txGasLimit=300000000
+info|2025-10-27 06:22:41.645124|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][parsePublicKeyListOfSection],sectionName=consensus,it.first=73994dae9e8b8da733108a4153dfe79151d701dff425f84c87b5324e8ebd02ab6a0ebc9e4f1e0298a7ddca50f94a8f95c62b6997226d571e470e8f2b0600634a
+info|2025-10-27 06:22:41.645141|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][parsePublicKeyListOfSection],sectionName=consensus,it.first=374bdfe969e1d8ea1200ade93e5d8cf1a7d5741f238011004b0f43ca818706f194b2f067e1708125f7ffc536610b9a72addbd56b238d65f18912be39037ffcc5
+info|2025-10-27 06:22:41.645162|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][parsePublicKeyListOfSection],sectionName=consensus,it.first=87d00b98321fc70a5abc85ad9e80db10cce315194133697bf74aace1d3f8430957a766240f751752708f4282f46110d6ea56c3eb5d1c02ce98a66f327f595270
+info|2025-10-27 06:22:41.645178|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][parsePublicKeyListOfSection],sectionName=consensus,it.first=064cb676a36047a4b52ecbf9c01664b1e987d91b438110ba6a12d96972726622e824d295b1de8b0298b5afe7bbbc0bd04a3890e1a36eae028c1cfbe07971b995
+info|2025-10-27 06:22:41.645185|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][parsePublicKeyListOfSection],totalPubKeySize=4
+info|2025-10-27 06:22:41.645216|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][max_block_range],maxBlockRange=0,maxBlockPerProcess=3
+info|2025-10-27 06:22:41.645224|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][parseGenesisConfig],timestamp=1759762229000
+info|2025-10-27 06:22:41.645236|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam]setEVMFlags,enableFreeStorageVMSchedule=false,evmFlags=0
+info|2025-10-27 06:22:41.645252|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam]store evmFlag,evmFlag=0
+info|2025-10-27 06:22:41.645258|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam]store consensus time,consensusTimeout=3
+info|2025-10-27 06:22:41.645270|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initMark],genesisMark=1-064cb676a36047a4b52ecbf9c01664b1e987d91b438110ba6a12d96972726622e824d295b1de8b0298b5afe7bbbc0bd04a3890e1a36eae028c1cfbe07971b995,374bdfe969e1d8ea1200ade93e5d8cf1a7d5741f238011004b0f43ca818706f194b2f067e1708125f7ffc536610b9a72addbd56b238d65f18912be39037ffcc5,73994dae9e8b8da733108a4153dfe79151d701dff425f84c87b5324e8ebd02ab6a0ebc9e4f1e0298a7ddca50f94a8f95c62b6997226d571e470e8f2b0600634a,87d00b98321fc70a5abc85ad9e80db10cce315194133697bf74aace1d3f8430957a766240f751752708f4282f46110d6ea56c3eb5d1c02ce98a66f327f595270,-pbft-storage-0-1000-300000000-3
+info|2025-10-27 06:22:41.645278|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initIniConfig]initTxPoolConfig/initSyncConfig/initTxExecuteConfig,configFile=conf/group.1.ini
+info|2025-10-27 06:22:41.645465|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initStorageConfig],stateType=storage,storageDB=rocksdb,storagePath=data//group1/block/RocksDB,baseDir=data//group1,dbtype=mysql,dbip=127.0.0.1,dbport=3306,dbcharset=utf8mb4,initconnections=15,maxconnections=50,scrollThreshold=2000,enableReconfirmCommittee=false
+info|2025-10-27 06:22:41.645485|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initTxPoolConfig],txPoolLimit=150000,memorySizeLimit(MB)=512,notifyWorkerNum=2,txsExpirationTime(ms)=600000
+info|2025-10-27 06:22:41.645494|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initSyncConfig],idleWaitMs=200
+info|2025-10-27 06:22:41.645505|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initSyncConfig],enableSendTxsByTree=true,enableSendBlockStatusByTree=true
+info|2025-10-27 06:22:41.645513|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initSyncConfig],gossipInterval=1000
+info|2025-10-27 06:22:41.645528|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initSyncConfig],enableSendBlockStatusByTree=true,gossipInterval=1000,gossipPeers=3,syncTreeWidth=3,maxQueueSizeForBlockSync=536870912,txsStatusGossipMaxPeers=5,syncInfoPrintInterval=10,freeNodeRead=false
+info|2025-10-27 06:22:41.645547|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][InitTxExecuteConfig],enableParallel=true
+info|2025-10-27 06:22:41.645568|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initConsensusIniConfig],maxTTL=2,minBlockGenerationTime=500,enablDynamicBlockSize=true,blockSizeIncreaseRatio=0.5,enableTTLOptimize=true,enablePrepareWithTxsHash=true
+info|2025-10-27 06:22:41.645620|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initRPBFTConsensusIniConfig],broadcastPrepareByTree=true,prepareStatusBroadcastPercent=33,maxRequestMissedTxsWaitTime=100,maxRequestPrepareWaitTime=100
+info|2025-10-27 06:22:41.645629|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam][initFlowControlConfig],maxQPS=9223372036854775807,outGoingBandwidth(Bytes)=9223372036854775807
+info|2025-10-27 06:22:41.645635|fisco-bcos-0x00007effe5500dc0|[g:1][LedgerParam]parseSDKAllowList,sdkAllowList=[],enableSDKAllowListControl=false
+info|2025-10-27 06:22:41.645663|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger][DBInitializer]
+info|2025-10-27 06:22:41.645671|io_service-0x00007effe2787700|[NETWORK][Host]P2P Recv Connect, From=127.0.0.1:44206
+info|2025-10-27 06:22:41.645746|io_service-0x00007effe2787700|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30301
+info|2025-10-27 06:22:41.646258|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER]setSDKAllowList,groupId=1,sdkAllowListSize=0
+info|2025-10-27 06:22:41.646276|fisco-bcos-0x00007effe5500dc0|[g:1][CHANNEL]registerSDKAllowListByGroupId,groupId=1,size=0
+info|2025-10-27 06:22:41.646293|fisco-bcos-0x00007effe5500dc0|[g:1][CHANNEL]Disable group-level sdk permission control for sdk allowlist is empty
+info|2025-10-27 06:22:41.646299|fisco-bcos-0x00007effe5500dc0|[g:1][DBINITIALIZER] [initStorageDB]
+info|2025-10-27 06:22:41.646305|fisco-bcos-0x00007effe5500dc0|[g:1][DBINITIALIZER] [initRocksDBStorage]
+info|2025-10-27 06:22:41.646340|fisco-bcos-0x00007effe5500dc0|[g:1][ROCKSDB]open rocksDB handler,path=data//group1/block/RocksDB
+info|2025-10-27 06:22:41.665653|fisco-bcos-0x00007effe5500dc0|[g:1][g:1][STORAGE][CachedStorage]Init flushStorage thread
+info|2025-10-27 06:22:41.665772|fisco-bcos-0x00007effe5500dc0|[g:1][DBINITIALIZER] [init CachedStorage],maxCapacity=32,maxForwardBlock=10
+info|2025-10-27 06:22:41.665783|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger][initBlockChain]
+info|2025-10-27 06:22:41.666031|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER]set enableHexBlock to be false,version=34275328
+info|2025-10-27 06:22:41.666066|fisco-bcos-0x00007effe5500dc0|[g:1][BLOCKCHAIN][#checkAndBuildGenesisBlock],shouldBuild=false
+info|2025-10-27 06:22:41.666457|fisco-bcos-0x00007effe5500dc0|[g:1][BLOCKCHAIN][#checkAndBuildGenesisBlock]Already have the 0th block, 0th groupMark is equal to file groupMark.
+info|2025-10-27 06:22:41.666502|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger]initBlockChain SUCC
+info|2025-10-27 06:22:41.666557|fisco-bcos-0x00007effe5500dc0|[g:1][DBINITIALIZER] [createStateFactory],type=storage
+info|2025-10-27 06:22:41.666583|fisco-bcos-0x00007effe5500dc0|[g:1][DBINITIALIZER] createStorageState SUCC
+info|2025-10-27 06:22:41.666588|fisco-bcos-0x00007effe5500dc0|[g:1][DBINITIALIZER] [createStateFactory SUCC]
+info|2025-10-27 06:22:41.666592|fisco-bcos-0x00007effe5500dc0|[g:1][DBINITIALIZER] createExecutiveContext...
+info|2025-10-27 06:22:41.666609|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER]createGasMetric,vmFlagType=0
+info|2025-10-27 06:22:41.666614|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER]createGasMetric
+info|2025-10-27 06:22:41.666622|fisco-bcos-0x00007effe5500dc0|[g:1][DBINITIALIZER] create precompiledGasFactory and precompiledResultFactory
+info|2025-10-27 06:22:41.666626|fisco-bcos-0x00007effe5500dc0|[g:1][DBINITIALIZER] createExecutiveContext SUCC
+info|2025-10-27 06:22:41.666631|fisco-bcos-0x00007effe5500dc0|[g:1][DBINITIALIZER] [setSyncNumForCachedStorage],syncNum=183
+info|2025-10-27 06:22:41.666637|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initNetworkBandWidthLimiter: outGoingBandwidthLimit has been disabled],groupId=1
+info|2025-10-27 06:22:41.666642|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][QPSLimit has been disabled],groupId=1
+info|2025-10-27 06:22:41.666647|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger][initBlockVerifier]
+info|2025-10-27 06:22:41.666654|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger][initBlockVerifier SUCC],evmFlags=0
+info|2025-10-27 06:22:41.666660|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger][initTxPool],txPoolLimit=150000
+info|2025-10-27 06:22:41.678257|io_service-0x00007effe2787700|[NETWORK][Host]P2P Recv Connect, From=127.0.0.1:44208
+info|2025-10-27 06:22:41.678349|io_service-0x00007effe2787700|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30301
+info|2025-10-27 06:22:41.689100|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger]initTxPool SUCC
+info|2025-10-27 06:22:41.689140|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger][initSync],idleWaitMs=200,gossipInterval=1000,gossipPeers=3
+info|2025-10-27 06:22:41.689151|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER]Init sync master,enableSendBlockStatusByTree=true,enableSendTxsByTree=true
+info|2025-10-27 06:22:41.689914|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger]initSync SUCC
+info|2025-10-27 06:22:41.689930|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger][consensusInitFactory]
+info|2025-10-27 06:22:41.689935|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger][createPBFTSealer]
+info|2025-10-27 06:22:41.689939|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger][createPBFTSealer],baseDir=data//group1,Protocol=65544
+info|2025-10-27 06:22:41.689990|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initLedger]createPBFTSealer for PBFT or rPBFT,consensusType=pbft
+info|2025-10-27 06:22:41.689999|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER]createConsensusEngine: create PBFTEngine
+info|2025-10-27 06:22:41.690020|fisco-bcos-0x00007effe5500dc0|[g:1][CONSENSUS][PBFT]Register handler for PBFTEngine
+info|2025-10-27 06:22:41.690532|fisco-bcos-0x00007effe5500dc0|[g:1][CONSENSUS][PBFT]setMinBlockGenerationTime,minBlockGenerationTime=500,consensusTime=1000
+info|2025-10-27 06:22:41.690594|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER][initEventLogFilterManager]initEventLogFilterManager SUCC
+info|2025-10-27 06:22:41.690603|fisco-bcos-0x00007effe5500dc0|[LedgerInitializer init group succ],groupID=1
+info|2025-10-27 06:22:41.690852|fisco-bcos-0x00007effe5500dc0|[SafeHttpServer::StartListening]use default epoll
+info|2025-10-27 06:22:41.691211|fisco-bcos-0x00007effe5500dc0|[INITIALIZER][RPCInitializer JsonrpcHttpServer started],jsonrpc_IP=127.0.0.1,jsonrpc_listen_port=8546,jsonrpc_thread_count=8,ipv6=false,disableDynamicGroup=false,uncheckGroupMember=false
+info|2025-10-27 06:22:41.691254|fisco-bcos-0x00007effe5500dc0|[g:1][LEDGER]startAll...
+info|2025-10-27 06:22:41.712382|io_service-0x00007effe2787700|[NETWORK][Host]P2P Recv Connect, From=127.0.0.1:44222
+info|2025-10-27 06:22:41.712450|io_service-0x00007effe2787700|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30301
+info|2025-10-27 06:22:41.712557|io_service-0x00007effe2787700|[NETWORK][Host]handshakeServer succ,remote endpoint=127.0.0.1:44200
+info|2025-10-27 06:22:41.712726|io_service-0x00007effe2787700|[NETWORK][Host]startPeerSession, Remote=127.0.0.1:44200,local endpoint=127.0.0.1:30301,nodeID=374bdfe9...
+info|2025-10-27 06:22:41.712989|io_service-0x00007effe2787700|[NETWORK][Host]handshakeClient succ,local endpoint=127.0.0.1:44200
+info|2025-10-27 06:22:41.713045|io_service-0x00007effe2787700|[NETWORK][Host]startPeerSession, Remote=127.0.0.1:30301,local endpoint=127.0.0.1:44200,nodeID=374bdfe9...
+info|2025-10-27 06:22:41.716623|io_service-0x00007effe2787700|[NETWORK][Host]handshakeClient succ,local endpoint=127.0.0.1:36152
+info|2025-10-27 06:22:41.716731|P2P-0x00007effe3789700|[P2P][Service] Connection established,nodeID=73994dae...,endpoint=127.0.0.1:30300
+info|2025-10-27 06:22:41.717452|io_service-0x00007effe2787700|[NETWORK][Host]startPeerSession, Remote=127.0.0.1:30300,local endpoint=127.0.0.1:36152,nodeID=73994dae...
+info|2025-10-27 06:22:41.717671|io_service-0x00007effe2787700|[NETWORK][Host]handshakeClient succ,local endpoint=127.0.0.1:58168
+info|2025-10-27 06:22:41.717746|P2P-0x00007effe2f88700|[P2P][Service] Connection established,nodeID=064cb676...,endpoint=127.0.0.1:30303
+info|2025-10-27 06:22:41.717920|io_service-0x00007effe2787700|[NETWORK][Host]startPeerSession, Remote=127.0.0.1:30303,local endpoint=127.0.0.1:58168,nodeID=064cb676...
+info|2025-10-27 06:22:41.717972|io_service-0x00007effe2787700|[NETWORK][Host]handshakeServer succ,remote endpoint=127.0.0.1:44206
+info|2025-10-27 06:22:41.718000|io_service-0x00007effe2787700|[NETWORK][Host]startPeerSession, Remote=127.0.0.1:44206,local endpoint=127.0.0.1:30301,nodeID=064cb676...
+info|2025-10-27 06:22:41.718718|fisco-bcos-0x00007effe5500dc0|[g:1][GossipBlockStatus]start GossipBlockStatus succ
+info|2025-10-27 06:22:41.718758|fisco-bcos-0x00007effe5500dc0|[g:1][CONSENSUS][ConsensusEngine][Start ConsensusEngineBase]
+info|2025-10-27 06:22:41.721881|fisco-bcos-0x00007effe5500dc0|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=183,sealerIdx=0,hash=84b9e5d9...,next=184,tx=1,nodeIdx=1
+info|2025-10-27 06:22:41.721939|fisco-bcos-0x00007effe5500dc0|[g:1][ROCKSDB]open rocksDB handler,path=data//group1/pbftMsgBackup/RocksDB
+info|2025-10-27 06:22:41.730452|io_service-0x00007effe2787700|[NETWORK][Host]handshakeServer succ,remote endpoint=127.0.0.1:44222
+info|2025-10-27 06:22:41.730545|io_service-0x00007effe2787700|[NETWORK][Host]startPeerSession, Remote=127.0.0.1:44222,local endpoint=127.0.0.1:30301,nodeID=73994dae...
+info|2025-10-27 06:22:41.730818|io_service-0x00007effe2787700|[NETWORK][Host]handshakeClient succ,local endpoint=127.0.0.1:39868
+info|2025-10-27 06:22:41.730938|P2P-0x00007effe478b700|[P2P][Service] Connection established,nodeID=87d00b98...,endpoint=127.0.0.1:30302
+info|2025-10-27 06:22:41.730977|io_service-0x00007effe2787700|[NETWORK][Host]startPeerSession, Remote=127.0.0.1:30302,local endpoint=127.0.0.1:39868,nodeID=87d00b98...
+info|2025-10-27 06:22:41.747792|io_service-0x00007effe2787700|[NETWORK][Host]handshakeServer succ,remote endpoint=127.0.0.1:44208
+info|2025-10-27 06:22:41.748247|io_service-0x00007effe2787700|[NETWORK][Host]startPeerSession, Remote=127.0.0.1:44208,local endpoint=127.0.0.1:30301,nodeID=87d00b98...
+info|2025-10-27 06:22:41.748668|fisco-bcos-0x00007effe5500dc0|[g:1][CONSENSUS][PBFT][PBFT init env successfully]
+info|2025-10-27 06:22:41.748696|fisco-bcos-0x00007effe5500dc0|[g:1][CONSENSUS][PBFT][Start PBFTEngine...]
+info|2025-10-27 06:22:41.748702|fisco-bcos-0x00007effe5500dc0|[g:1][CONSENSUS][SEALER][Start sealer module]
+info|2025-10-27 06:22:41.751941|fisco-bcos-0x00007effe5500dc0|[g:1][EVENT][EventLogFilterManager]start,m_maxBlockRange=0,m_maxBlockPerLoopFilter=3
+info|2025-10-27 06:22:41.793209|alignTime-1-0x00007effd2f68700|[g:1][NodeTimeMaintenance]updateTimeInfo: update median time offset,updatedMedianTimeOffset=-1,peer=73994dae...,peerTime=1761571361792,peerOffset=-1,utcTime=1761571361793
+info|2025-10-27 06:22:41.793411|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=191,peer=73994dae...
+info|2025-10-27 06:22:41.793463|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=192,to=199,peer=73994dae...
+info|2025-10-27 06:22:41.793476|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=200,to=207,peer=73994dae...
+info|2025-10-27 06:22:41.793488|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=208,to=215,peer=73994dae...
+info|2025-10-27 06:22:41.811662|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:22:41.811703|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:22:41.811930|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:22:41.812746|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571361812
+error|2025-10-27 06:22:41.812919|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:22:41.812973|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:22:41.813026|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:22:41.813660|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:22:41.813778|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:22:41.817783|alignTime-1-0x00007effd2f68700|[g:1][NodeTimeMaintenance]updateTimeInfo: update median time offset,updatedMedianTimeOffset=0,peer=87d00b98...,peerTime=1761571361817,peerOffset=0,utcTime=1761571361817
+info|2025-10-27 06:22:41.830579|alignTime-1-0x00007effd2f68700|[g:1][NodeTimeMaintenance]updateTimeInfo: update median time offset,updatedMedianTimeOffset=-1,peer=064cb676...,peerTime=1761571361829,peerOffset=-1,utcTime=1761571361830
+warning|2025-10-27 06:22:44.728025|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=0,toV=1,curNum=183,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:22:44.728677|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=1,nodeIdx=1,changeCycle=1,myNode=374bdfe9...,timecost=2
+warning|2025-10-27 06:22:49.238397|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=0,toV=2,curNum=183,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:22:49.238643|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=2,nodeIdx=1,changeCycle=2,myNode=374bdfe9...,timecost=2
+info|2025-10-27 06:22:51.644100|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:22:52.345920|ChannelServer-0x00007effd9775700|[CHANNEL]Receive new connection,from=127.0.0.1:49940
+info|2025-10-27 06:22:52.353478|ChannelServer-0x00007effd9775700|[CHANNEL]channel new connect, host=127.0.0.1:49940
+info|2025-10-27 06:22:52.353566|ChannelServer-0x00007effd9775700|[CHANNEL]start receive
+info|2025-10-27 06:22:52.353592|ChannelServer-0x00007effd9775700|[CHANNEL][SESSION]setRemotePublicKey: set sdk public key,sdkPublicKey=18ec5cfe...
+info|2025-10-27 06:22:52.355884|ChannelReq-0x00007effdff82700|[RPC][getClientVersion]request
+info|2025-10-27 06:22:52.357766|ChannelReq-0x00007effdf781700|[CHANNEL]onClientHandshake,ProtocolVersion=3,clientType=java-sdk,endpoint=127.0.0.1:49940
+info|2025-10-27 06:22:52.359643|ChannelReq-0x00007effde77f700|[RPC][getGroupList]request
+info|2025-10-27 06:22:52.363555|ChannelReq-0x00007effdef80700|[RPC][getClientVersion]request
+info|2025-10-27 06:22:52.774043|ChannelReq-0x00007effe1785700|[RPC][getGroupList]request
+warning|2025-10-27 06:22:55.992667|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=0,toV=3,curNum=183,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:22:55.992936|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=3,nodeIdx=1,changeCycle=3,myNode=374bdfe9...,timecost=2
+info|2025-10-27 06:22:56.710350|P2P-0x00007effe478b700|[NETWORK][Session]Received topic: [3	_block_notify_1] from 73994dae9e8b8da733108a4153dfe79151d701dff425f84c87b5324e8ebd02ab6a0ebc9e4f1e0298a7ddca50f94a8f95c62b6997226d571e470e8f2b0600634a
+info|2025-10-27 06:22:57.807457|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:22:57.811901|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:22:57.811931|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:22:57.812089|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:22:57.812434|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571377812
+error|2025-10-27 06:22:57.812510|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:22:57.812547|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:22:57.812580|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:22:57.812762|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:22:57.812861|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+warning|2025-10-27 06:22:58.572896|SyncTrans-1-0x00007effc9755700|[g:1][TXPOOL][TransactionNonceChecker]InvalidBlockLimit,blkLimit=1276,maxBlkLimit=1000,curBlk=183,tx=7e684ee436ae195fd6ad6e0e87daeb1e1d7f61c3644ab20c8b82da21005caaf9
+warning|2025-10-27 06:22:58.625822|SyncTrans-1-0x00007effc9755700|[g:1][TXPOOL][TransactionNonceChecker]InvalidBlockLimit,blkLimit=1276,maxBlkLimit=1000,curBlk=183,tx=7e684ee436ae195fd6ad6e0e87daeb1e1d7f61c3644ab20c8b82da21005caaf9
+info|2025-10-27 06:23:01.644481|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:23:04.252417|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:23:04.256926|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:23:04.256976|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:23:04.257216|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:23:04.257566|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571384257
+error|2025-10-27 06:23:04.257661|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:23:04.257680|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:23:04.257708|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:23:04.258039|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:23:04.258150|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:23:06.101393|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=3,INFO=,reqNum=777,curNum=183,GenIdx=0,Cview=1,view=0,fromIdx=0,fromNode=064cb676...,fromIp=127.0.0.1:30303,hash=9c04e6ab...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:06.102554|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=3,curNum=183,peerNode=064cb676...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:06.103138|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=3,INFO=,reqNum=777,curNum=183,GenIdx=2,Cview=1,view=0,fromIdx=2,fromNode=73994dae...,fromIp=127.0.0.1:30300,hash=9c04e6ab...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:06.104225|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=3,curNum=183,peerNode=73994dae...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:06.106764|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=3,INFO=,reqNum=777,curNum=183,GenIdx=3,Cview=1,view=0,fromIdx=3,fromNode=87d00b98...,fromIp=127.0.0.1:30302,hash=9c04e6ab...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:06.107843|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=3,curNum=183,peerNode=87d00b98...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+warning|2025-10-27 06:23:06.120408|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=0,toV=4,curNum=183,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:06.120582|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=4,nodeIdx=1,changeCycle=4,myNode=374bdfe9...,timecost=1
+info|2025-10-27 06:23:07.114309|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=4,INFO=,reqNum=777,curNum=183,GenIdx=0,Cview=2,view=0,fromIdx=0,fromNode=064cb676...,fromIp=127.0.0.1:30303,hash=9c04e6ab...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:07.116104|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=4,curNum=183,peerNode=064cb676...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:07.116215|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=4,INFO=,reqNum=777,curNum=183,GenIdx=3,Cview=2,view=0,fromIdx=3,fromNode=87d00b98...,fromIp=127.0.0.1:30302,hash=9c04e6ab...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:07.117267|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=4,curNum=183,peerNode=87d00b98...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:07.154576|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=4,INFO=,reqNum=777,curNum=183,GenIdx=2,Cview=2,view=0,fromIdx=2,fromNode=73994dae...,fromIp=127.0.0.1:30300,hash=9c04e6ab...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:07.155635|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=4,curNum=183,peerNode=73994dae...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:10.657625|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:23:10.662047|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:23:10.662082|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:23:10.662219|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:23:10.662635|Download-1-0x00007effc2747700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571390662
+error|2025-10-27 06:23:10.662743|Download-1-0x00007effc2747700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:23:10.662787|Download-1-0x00007effc2747700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:23:10.662820|Download-1-0x00007effc2747700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:23:10.663154|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:23:10.663238|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:23:11.645426|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+warning|2025-10-27 06:23:12.108038|SyncTrans-1-0x00007effc9755700|[g:1][TXPOOL][TransactionNonceChecker]InvalidBlockLimit,blkLimit=1277,maxBlkLimit=1000,curBlk=183,tx=a9971affa9bd85ed04fe132841e1a17ae78bff8b0d74ef712715c361a9442f59
+warning|2025-10-27 06:23:12.160850|SyncTrans-1-0x00007effc9755700|[g:1][TXPOOL][TransactionNonceChecker]InvalidBlockLimit,blkLimit=1277,maxBlkLimit=1000,curBlk=183,tx=a9971affa9bd85ed04fe132841e1a17ae78bff8b0d74ef712715c361a9442f59
+info|2025-10-27 06:23:15.232601|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=4,INFO=,reqNum=778,curNum=183,GenIdx=0,Cview=1,view=0,fromIdx=0,fromNode=064cb676...,fromIp=127.0.0.1:30303,hash=0ac97c2e...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:15.233727|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=4,curNum=183,peerNode=064cb676...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:15.233848|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=4,INFO=,reqNum=778,curNum=183,GenIdx=3,Cview=1,view=0,fromIdx=3,fromNode=87d00b98...,fromIp=127.0.0.1:30302,hash=0ac97c2e...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:15.234864|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=4,curNum=183,peerNode=87d00b98...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:15.235005|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=4,INFO=,reqNum=778,curNum=183,GenIdx=2,Cview=1,view=0,fromIdx=2,fromNode=73994dae...,fromIp=127.0.0.1:30300,hash=0ac97c2e...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:15.236505|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=4,curNum=183,peerNode=73994dae...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:16.243293|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=4,INFO=,reqNum=778,curNum=183,GenIdx=2,Cview=2,view=0,fromIdx=2,fromNode=73994dae...,fromIp=127.0.0.1:30300,hash=0ac97c2e...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:16.244641|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=4,curNum=183,peerNode=73994dae...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:16.244846|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=4,INFO=,reqNum=778,curNum=183,GenIdx=0,Cview=2,view=0,fromIdx=0,fromNode=064cb676...,fromIp=127.0.0.1:30303,hash=0ac97c2e...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:16.246003|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=4,curNum=183,peerNode=064cb676...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:16.246573|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]catchupView,toView=4,INFO=,reqNum=778,curNum=183,GenIdx=3,Cview=2,view=0,fromIdx=3,fromNode=87d00b98...,fromIp=127.0.0.1:30302,hash=0ac97c2e...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:16.248073|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]sendViewChangeMsg: send viewchange to started node,v=0,toV=4,curNum=183,peerNode=87d00b98...,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:17.060534|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:23:17.065170|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:23:17.065192|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:23:17.065345|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:23:17.065630|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571397065
+error|2025-10-27 06:23:17.065725|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:23:17.065794|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:23:17.065827|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:23:17.066024|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:23:17.066114|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+warning|2025-10-27 06:23:21.309784|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=0,toV=5,curNum=183,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:21.309973|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=5,nodeIdx=1,changeCycle=5,myNode=374bdfe9...,timecost=1
+info|2025-10-27 06:23:21.646188|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:23:23.466263|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:23:23.470659|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:23:23.470717|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:23:23.470885|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:23:23.471209|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571403471
+error|2025-10-27 06:23:23.471305|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:23:23.471324|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:23:23.471372|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:23:23.471548|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:23:23.471646|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:23:29.870075|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:23:29.875550|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:23:29.875693|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:23:29.875969|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:23:29.876338|Download-1-0x00007effc7f52700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571409876
+error|2025-10-27 06:23:29.876403|Download-1-0x00007effc7f52700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:23:29.876422|Download-1-0x00007effc7f52700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:23:29.876451|Download-1-0x00007effc7f52700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:23:29.877377|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:23:29.877530|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:23:31.646707|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:23:36.274209|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:23:36.278718|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:23:36.278766|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:23:36.278925|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:23:36.279243|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571416279
+error|2025-10-27 06:23:36.279324|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:23:36.279361|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:23:36.279393|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:23:36.279567|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:23:36.279657|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:23:41.648038|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:23:42.681965|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:23:42.687137|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:23:42.687187|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:23:42.687375|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:23:42.687786|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571422687
+error|2025-10-27 06:23:42.687888|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:23:42.687926|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:23:42.687958|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:23:42.688126|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:23:42.688211|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+warning|2025-10-27 06:23:44.089907|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=0,toV=6,curNum=183,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:23:44.090476|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=6,nodeIdx=1,changeCycle=6,myNode=374bdfe9...,timecost=2
+info|2025-10-27 06:23:49.084998|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:23:49.089386|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:23:49.089411|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:23:49.089563|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:23:49.089889|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571429089
+error|2025-10-27 06:23:49.089944|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:23:49.089962|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:23:49.089990|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:23:49.090163|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:23:49.090252|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:23:51.648613|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:23:52.774148|ChannelReq-0x00007effdf781700|[RPC][getGroupList]request
+info|2025-10-27 06:23:55.599788|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:23:55.604051|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:23:55.604084|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:23:55.604195|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:23:55.604507|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571435604
+error|2025-10-27 06:23:55.604606|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:23:55.604642|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:23:55.604676|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:23:55.604852|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:23:55.604928|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:24:01.649061|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:24:02.096898|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:24:02.101017|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:24:02.101052|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:24:02.101191|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:24:02.101538|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571442101
+error|2025-10-27 06:24:02.101636|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:24:02.101659|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:24:02.101686|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:24:02.101910|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:24:02.101997|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:24:08.503596|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:24:08.508365|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:24:08.508403|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:24:08.508559|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:24:08.508844|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571448508
+error|2025-10-27 06:24:08.508935|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:24:08.508971|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:24:08.509001|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:24:08.509144|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:24:08.509227|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:24:11.650112|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:24:14.906427|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:24:14.910819|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:24:14.910862|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:24:14.911019|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:24:14.911470|Download-1-0x00007effc1f46700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571454911
+error|2025-10-27 06:24:14.911596|Download-1-0x00007effc1f46700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:24:14.911637|Download-1-0x00007effc1f46700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:24:14.911712|Download-1-0x00007effc1f46700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:24:14.912008|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:24:14.912110|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+warning|2025-10-27 06:24:18.265643|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=0,toV=7,curNum=183,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:24:18.265808|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=7,nodeIdx=1,changeCycle=7,myNode=374bdfe9...,timecost=1
+info|2025-10-27 06:24:21.311963|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:24:21.316201|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:24:21.316229|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:24:21.316369|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:24:21.316671|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571461316
+error|2025-10-27 06:24:21.316774|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:24:21.316811|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:24:21.316841|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:24:21.317031|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:24:21.317115|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:24:21.650591|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:24:27.718976|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:24:27.723150|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:24:27.723189|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:24:27.723364|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:24:27.723698|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571467723
+error|2025-10-27 06:24:27.723829|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:24:27.723874|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:24:27.723908|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:24:27.724096|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:24:27.724165|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:24:31.651305|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:24:34.121780|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:24:34.126303|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:24:34.126353|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:24:34.126546|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:24:34.126869|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571474126
+error|2025-10-27 06:24:34.126927|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:24:34.126944|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:24:34.126976|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:24:34.127175|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:24:34.127272|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:24:40.528171|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:24:40.532326|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:24:40.532369|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:24:40.532508|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:24:40.532876|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571480532
+error|2025-10-27 06:24:40.532997|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:24:40.533036|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:24:40.533075|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:24:40.533417|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:24:40.533524|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:24:41.651712|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:24:46.931619|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:24:46.936063|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:24:46.936099|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:24:46.936269|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:24:46.936604|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571486936
+error|2025-10-27 06:24:46.936661|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:24:46.936678|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:24:46.936707|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:24:46.937235|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:24:46.937467|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:24:51.652848|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:24:52.773805|ChannelReq-0x00007effdff82700|[RPC][getGroupList]request
+info|2025-10-27 06:24:53.338579|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:24:53.342792|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:24:53.342843|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:24:53.343008|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:24:53.343352|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571493343
+error|2025-10-27 06:24:53.343427|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:24:53.343468|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:24:53.343498|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:24:53.343680|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:24:53.343765|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:24:59.744244|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:24:59.748225|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:24:59.748263|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:24:59.748396|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:24:59.748713|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571499748
+error|2025-10-27 06:24:59.748788|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:24:59.748810|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:24:59.748902|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:24:59.749210|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:24:59.749278|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:25:01.653548|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:25:06.146726|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:25:06.150958|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:25:06.150982|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:25:06.151137|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:25:06.151426|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571506151
+error|2025-10-27 06:25:06.151481|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:25:06.151519|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:25:06.151554|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:25:06.151758|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:25:06.151842|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+warning|2025-10-27 06:25:09.534277|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=0,toV=8,curNum=183,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:25:09.535180|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=8,nodeIdx=1,changeCycle=8,myNode=374bdfe9...,timecost=3
+info|2025-10-27 06:25:11.654218|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:25:12.552343|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:25:12.556480|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:25:12.556505|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:25:12.556664|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:25:12.556936|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571512556
+error|2025-10-27 06:25:12.556987|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:25:12.557005|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:25:12.557052|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:25:12.557160|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:25:12.557226|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:25:18.955786|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:25:18.962484|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:25:18.962558|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:25:18.962802|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:25:18.963427|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571518963
+error|2025-10-27 06:25:18.963633|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:25:18.963702|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:25:18.963761|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:25:18.964065|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:25:18.964228|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:25:21.654642|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:25:25.362221|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:25:25.366623|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:25:25.366669|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:25:25.366850|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:25:25.367168|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571525367
+error|2025-10-27 06:25:25.367249|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:25:25.367270|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:25:25.367297|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:25:25.367466|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:25:25.367548|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:25:31.654806|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:25:31.769048|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:25:31.773437|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:25:31.773477|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:25:31.773634|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:25:31.773925|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571531773
+error|2025-10-27 06:25:31.774023|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:25:31.774046|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:25:31.774074|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:25:31.774276|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:25:31.774342|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:25:38.172637|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:25:38.176950|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:25:38.176974|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:25:38.177122|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:25:38.177464|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571538177
+error|2025-10-27 06:25:38.177541|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:25:38.177581|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:25:38.177611|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:25:38.177775|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:25:38.177839|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:25:41.655541|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:25:44.580241|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:25:44.585899|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:25:44.585954|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:25:44.586140|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:25:44.586580|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571544586
+error|2025-10-27 06:25:44.586695|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:25:44.586742|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:25:44.586777|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:25:44.587017|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:25:44.587149|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:25:50.983717|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:25:50.987616|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:25:50.987656|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:25:50.987813|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:25:50.988105|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571550988
+error|2025-10-27 06:25:50.988184|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:25:50.988232|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:25:50.988263|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:25:50.988472|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:25:50.988570|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:25:51.656189|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:25:52.773658|ChannelReq-0x00007effe0783700|[RPC][getGroupList]request
+info|2025-10-27 06:25:57.428856|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:25:57.432862|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:25:57.432891|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:25:57.433049|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:25:57.433392|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571557433
+error|2025-10-27 06:25:57.433486|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:25:57.433522|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:25:57.433554|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:25:57.433796|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:25:57.433910|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:26:01.657041|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:26:03.953765|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:26:03.958716|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:26:03.958761|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:26:03.958889|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:26:03.959243|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571563959
+error|2025-10-27 06:26:03.959327|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:26:03.959350|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:26:03.959379|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:26:03.959600|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:26:03.959691|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:26:10.402101|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:26:10.406744|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:26:10.406807|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:26:10.406936|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:26:10.407279|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571570407
+error|2025-10-27 06:26:10.407409|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:26:10.407469|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:26:10.407519|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:26:10.407801|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:26:10.407940|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:26:11.657280|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:26:16.808862|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:26:16.814843|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:26:16.814898|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:26:16.815040|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:26:16.815488|Download-1-0x00007effc7f52700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571576815
+error|2025-10-27 06:26:16.815585|Download-1-0x00007effc7f52700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:26:16.815607|Download-1-0x00007effc7f52700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:26:16.815639|Download-1-0x00007effc7f52700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:26:16.817658|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:26:16.817803|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:26:21.657999|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:26:23.215812|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:26:23.220259|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:26:23.220301|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:26:23.220440|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:26:23.220948|Download-1-0x00007effc2747700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571583220
+error|2025-10-27 06:26:23.221084|Download-1-0x00007effc2747700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:26:23.221127|Download-1-0x00007effc2747700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:26:23.221166|Download-1-0x00007effc2747700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:26:23.221465|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:26:23.221676|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+warning|2025-10-27 06:26:26.421131|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=0,toV=9,curNum=183,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:26:26.421707|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=9,nodeIdx=1,changeCycle=9,myNode=374bdfe9...,timecost=1
+info|2025-10-27 06:26:29.618419|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:26:29.622634|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:26:29.622681|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:26:29.622842|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:26:29.623208|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571589623
+error|2025-10-27 06:26:29.623286|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:26:29.623310|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:26:29.623358|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:26:29.624023|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:26:29.624118|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:26:31.659063|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:26:36.021395|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:26:36.025406|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:26:36.025438|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:26:36.025590|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:26:36.025930|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571596025
+error|2025-10-27 06:26:36.025983|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:26:36.026020|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:26:36.026051|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:26:36.026250|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:26:36.026336|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:26:41.660011|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:26:42.426334|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:26:42.431462|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:26:42.431523|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:26:42.431756|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:26:42.432528|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571602432
+error|2025-10-27 06:26:42.432657|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:26:42.432689|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:26:42.432730|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:26:42.433176|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:26:42.433322|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:26:48.884195|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:26:48.890105|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:26:48.890146|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:26:48.890305|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:26:48.890745|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571608890
+error|2025-10-27 06:26:48.890830|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:26:48.890847|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:26:48.890871|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:26:48.891062|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:26:48.891159|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:26:51.660121|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:26:52.773397|ChannelReq-0x00007effdef80700|[RPC][getGroupList]request
+info|2025-10-27 06:26:55.436312|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:26:55.443152|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:26:55.443210|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:26:55.443504|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:26:55.444094|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571615444
+error|2025-10-27 06:26:55.444231|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:26:55.444288|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:26:55.444352|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:26:55.444652|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:26:55.444772|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:27:01.660547|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:27:01.846290|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:27:01.852520|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:27:01.852580|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:27:01.852823|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:27:01.853537|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571621853
+error|2025-10-27 06:27:01.853651|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:27:01.853674|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:27:01.853731|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:27:01.854027|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:27:01.854166|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:27:08.250058|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:27:08.255233|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:27:08.255283|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:27:08.255453|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:27:08.255788|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571628255
+error|2025-10-27 06:27:08.255870|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:27:08.255886|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:27:08.255911|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:27:08.256123|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:27:08.256214|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:27:11.661420|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:27:14.655559|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:27:14.661003|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:27:14.661044|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:27:14.661164|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:27:14.661447|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571634661
+error|2025-10-27 06:27:14.661533|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:27:14.661551|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:27:14.661585|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:27:14.661927|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:27:14.662108|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:27:21.059827|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:27:21.066187|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:27:21.066247|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:27:21.066484|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:27:21.066980|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571641066
+error|2025-10-27 06:27:21.067123|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:27:21.067186|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:27:21.067233|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:27:21.067528|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:27:21.067672|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:27:21.662207|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:27:27.466039|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:27:27.472174|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:27:27.472218|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:27:27.472409|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:27:27.472721|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571647472
+error|2025-10-27 06:27:27.472828|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:27:27.472924|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:27:27.472980|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:27:27.473302|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:27:27.473430|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:27:31.662583|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:27:33.877472|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:27:33.882345|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:27:33.882403|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:27:33.882551|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:27:33.882885|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571653882
+error|2025-10-27 06:27:33.883111|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:27:33.883161|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:27:33.883207|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:27:33.883433|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:27:33.883562|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:27:40.477134|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:27:40.482826|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:27:40.482875|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:27:40.483011|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:27:40.483314|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571660483
+error|2025-10-27 06:27:40.483404|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:27:40.483426|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:27:40.483461|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:27:40.483643|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:27:40.483766|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:27:41.663095|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:27:46.884134|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:27:46.889081|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:27:46.889130|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:27:46.889294|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:27:46.889602|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571666889
+error|2025-10-27 06:27:46.889706|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:27:46.889728|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:27:46.889761|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:27:46.889965|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:27:46.890050|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:27:51.664052|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:27:52.774225|ChannelReq-0x00007effe0f84700|[RPC][getGroupList]request
+info|2025-10-27 06:27:53.287652|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:27:53.293700|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:27:53.293821|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:27:53.294054|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:27:53.294551|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571673294
+error|2025-10-27 06:27:53.294662|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:27:53.294685|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:27:53.294753|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:27:53.294998|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:27:53.295108|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:27:59.694236|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:27:59.700080|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:27:59.700139|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:27:59.700264|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:27:59.700526|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571679700
+error|2025-10-27 06:27:59.700605|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:27:59.700625|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:27:59.700655|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:27:59.700860|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:27:59.700950|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:28:01.664804|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:28:06.103619|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:28:06.111810|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:28:06.111875|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:28:06.112029|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:28:06.112379|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571686112
+error|2025-10-27 06:28:06.112455|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:28:06.112484|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:28:06.112520|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:28:06.112671|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:28:06.112755|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:28:37.294525|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:28:37.302181|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:28:37.302509|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:28:37.302843|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:28:37.303524|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571717303
+error|2025-10-27 06:28:37.303735|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:28:37.303787|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:28:37.303863|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:28:37.304202|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:28:37.304438|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:28:41.047577|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:28:43.696022|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:28:43.702184|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:28:43.702268|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:28:43.702507|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:28:43.702923|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571723702
+error|2025-10-27 06:28:43.703013|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:28:43.703050|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:28:43.703094|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:28:43.703300|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:28:43.703421|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:28:50.253999|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:28:50.258702|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:28:50.258824|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:28:50.259032|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:28:50.259429|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571730259
+error|2025-10-27 06:28:50.259516|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:28:50.259551|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:28:50.259600|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:28:50.259969|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:28:50.260149|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:28:51.048589|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+warning|2025-10-27 06:28:51.139376|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]ViewChangeWarning: not caused by omit empty block ,v=0,toV=10,curNum=183,hash=84b9e5d9...,nodeIdx=1,myNode=374bdfe9...
+info|2025-10-27 06:28:51.139615|PBFT-1-0x00007effc8753700|[g:1][CONSENSUS][PBFT]checkTimeout Succ,view=0,toView=10,nodeIdx=1,changeCycle=10,myNode=374bdfe9...,timecost=2
+info|2025-10-27 06:28:56.707328|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:28:56.712956|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:28:56.713033|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:28:56.713193|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:28:56.713646|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571736713
+error|2025-10-27 06:28:56.713768|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:28:56.713818|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:28:56.713879|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:28:56.714124|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:28:56.714240|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:29:01.050310|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:29:03.114853|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:29:03.121298|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:29:03.121397|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:29:03.121664|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:29:03.122388|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571743122
+error|2025-10-27 06:29:03.122541|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:29:03.122599|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:29:03.122666|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:29:03.124216|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:29:03.124355|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:29:09.516297|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:29:09.519906|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:29:09.519947|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:29:09.520174|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:29:09.520678|Download-1-0x00007effc1f46700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571749520
+error|2025-10-27 06:29:09.520770|Download-1-0x00007effc1f46700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:29:09.520798|Download-1-0x00007effc1f46700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:29:09.520829|Download-1-0x00007effc1f46700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:29:09.521014|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:29:09.521115|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:29:11.050466|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:29:15.922935|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:29:15.929721|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:29:15.929768|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:29:15.929959|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:29:15.930455|Download-1-0x00007effc1f46700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571755930
+error|2025-10-27 06:29:15.930545|Download-1-0x00007effc1f46700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:29:15.930572|Download-1-0x00007effc1f46700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:29:15.930610|Download-1-0x00007effc1f46700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:29:15.932525|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:29:15.932648|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:29:21.051481|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:29:22.157514|ChannelReq-0x00007effde77f700|[RPC][getGroupList]request
+info|2025-10-27 06:29:22.328897|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:29:22.333120|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:29:22.333157|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:29:22.333341|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:29:22.333716|Download-1-0x00007effc1f46700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571762333
+error|2025-10-27 06:29:22.333808|Download-1-0x00007effc1f46700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:29:22.333827|Download-1-0x00007effc1f46700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:29:22.333858|Download-1-0x00007effc1f46700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:29:22.334095|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:29:22.334223|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:29:28.732402|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:29:28.738421|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:29:28.738465|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:29:28.738644|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:29:28.739017|Download-1-0x00007effc1f46700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571768739
+error|2025-10-27 06:29:28.739128|Download-1-0x00007effc1f46700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:29:28.739149|Download-1-0x00007effc1f46700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:29:28.739182|Download-1-0x00007effc1f46700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:29:28.740114|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:29:28.740231|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:29:31.051640|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:29:35.141584|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:29:35.145759|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:29:35.145794|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:29:35.145959|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:29:35.146259|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571775146
+error|2025-10-27 06:29:35.146336|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:29:35.146373|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:29:35.146403|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:29:35.146670|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:29:35.146758|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:29:41.052341|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:29:41.543333|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:29:41.548541|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:29:41.548568|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:29:41.548696|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:29:41.548953|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571781548
+error|2025-10-27 06:29:41.549010|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:29:41.549028|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:29:41.549083|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:29:41.549389|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:29:41.549506|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:29:47.949081|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:29:47.954642|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:29:47.954688|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:29:47.954869|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:29:47.955217|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571787955
+error|2025-10-27 06:29:47.955339|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:29:47.955361|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:29:47.955392|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:29:47.955638|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:29:47.955732|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:29:51.052860|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:29:54.356915|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:29:54.362733|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:29:54.362756|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:29:54.362882|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:29:54.363903|Download-1-0x00007effc7f52700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571794363
+error|2025-10-27 06:29:54.364134|Download-1-0x00007effc7f52700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:29:54.364218|Download-1-0x00007effc7f52700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:29:54.364284|Download-1-0x00007effc7f52700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:29:54.364535|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:29:54.364704|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:30:00.160087|Sync-1-0x00007effc9f56700|[g:1][SYNC][id:374bdfe9...]print sync info,peersCount=3,infoJson={"blockNumber":183,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","isSyncing":true,"knownHighestNumber":778,"knownLatestHash":"0ac97c2ea37c267580a088273d4360daddace3468b5d35e6486f5a63fe769cf9","latestHash":"84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d","nodeId":"374bdfe969e1d8ea1200ade93e5d8cf1a7d5741f238011004b0f43ca818706f194b2f067e1708125f7ffc536610b9a72addbd56b238d65f18912be39037ffcc5","peers":[{"blockNumber":778,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","latestHash":"0ac97c2ea37c267580a088273d4360daddace3468b5d35e6486f5a63fe769cf9","nodeId":"064cb676a36047a4b52ecbf9c01664b1e987d91b438110ba6a12d96972726622e824d295b1de8b0298b5afe7bbbc0bd04a3890e1a36eae028c1cfbe07971b995"},{"blockNumber":778,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","latestHash":"0ac97c2ea37c267580a088273d4360daddace3468b5d35e6486f5a63fe769cf9","nodeId":"73994dae9e8b8da733108a4153dfe79151d701dff425f84c87b5324e8ebd02ab6a0ebc9e4f1e0298a7ddca50f94a8f95c62b6997226d571e470e8f2b0600634a"},{"blockNumber":778,"genesisHash":"f0d3e67991e2c3d83533c031601c30c4741aba35d7d8017900779abe4ae22efe","latestHash":"0ac97c2ea37c267580a088273d4360daddace3468b5d35e6486f5a63fe769cf9","nodeId":"87d00b98321fc70a5abc85ad9e80db10cce315194133697bf74aace1d3f8430957a766240f751752708f4282f46110d6ea56c3eb5d1c02ce98a66f327f595270"}],"protocolId":65545,"txPoolSize":"0"}
+info|2025-10-27 06:30:00.759793|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:30:00.765422|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:30:00.765471|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:30:00.765641|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:30:00.765978|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571800765
+error|2025-10-27 06:30:00.766079|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:30:00.766121|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:30:00.766155|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:30:00.766533|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:30:00.766629|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:30:01.054106|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:30:07.207820|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:30:07.213712|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:30:07.213743|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:30:07.213863|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:30:07.214072|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571807214
+error|2025-10-27 06:30:07.214115|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:30:07.214128|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:30:07.214151|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:30:07.214231|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:30:07.214280|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:30:11.054478|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:30:13.772731|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:30:13.778388|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:30:13.778460|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:30:13.778730|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:30:13.779332|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571813779
+error|2025-10-27 06:30:13.779402|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:30:13.779423|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:30:13.779483|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:30:13.779715|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:30:13.779854|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:30:20.179846|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:30:20.228132|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:30:20.228425|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:30:20.237357|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:30:20.241131|Download-1-0x00007effc7f52700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571820241
+error|2025-10-27 06:30:20.241222|Download-1-0x00007effc7f52700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:30:20.241242|Download-1-0x00007effc7f52700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:30:20.241310|Download-1-0x00007effc7f52700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:30:20.243716|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:30:20.244064|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:30:21.054733|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:30:22.156039|ChannelReq-0x00007effddf7e700|[RPC][getGroupList]request
+info|2025-10-27 06:30:26.586254|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=87d00b98...
+info|2025-10-27 06:30:26.591420|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:30:26.591473|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:30:26.591687|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:30:26.592192|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571826592
+error|2025-10-27 06:30:26.592292|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:30:26.592318|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:30:26.592351|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:30:26.592556|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:30:26.592661|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:30:31.071330|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:30:32.992230|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:30:32.998691|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:30:32.998749|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:30:32.998962|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:30:32.999501|Download-1-0x00007effc2747700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571832999
+error|2025-10-27 06:30:32.999610|Download-1-0x00007effc2747700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:30:32.999630|Download-1-0x00007effc2747700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:30:32.999681|Download-1-0x00007effc2747700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:30:32.999850|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:30:32.999957|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:30:39.399503|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:30:39.405019|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:30:39.405081|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:30:39.405264|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:30:39.405724|Download-1-0x00007effc7f52700|[PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571839405
+error|2025-10-27 06:30:39.405815|Download-1-0x00007effc7f52700|[PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:30:39.405834|Download-1-0x00007effc7f52700|[EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:30:39.405865|Download-1-0x00007effc7f52700|[EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:30:39.406093|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:30:39.406272|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:30:41.071748|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:32:37.539356|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:32:37.554921|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:32:37.555034|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:32:37.555481|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:32:37.556576|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571957556
+error|2025-10-27 06:32:37.556985|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:32:37.557300|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:32:37.557457|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:32:37.561635|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:32:37.561916|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:32:39.150094|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:32:44.085499|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:32:44.091563|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:32:44.091624|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:32:44.091762|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:32:44.092087|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571964092
+error|2025-10-27 06:32:44.092218|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:32:44.092285|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:32:44.092341|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:32:44.092570|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:32:44.092656|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:32:49.150336|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:32:50.625199|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=064cb676...
+info|2025-10-27 06:32:50.629009|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:32:50.629047|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:32:50.629197|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:32:50.629502|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571970629
+error|2025-10-27 06:32:50.629591|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:32:50.629629|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:32:50.629657|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:32:50.629880|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:32:50.629977|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+warning|2025-10-27 06:32:54.347293|ChannelServer-0x00007effd9775700|[CHANNEL][SESSION]onRead failed,value=335544539,message=short read (SSL routines, SSL routines)
+warning|2025-10-27 06:32:54.347739|ChannelServer-0x00007effd9775700|[CHANNEL]onClientRequest,errorCode=-1,what=Read failed, disconnect
+info|2025-10-27 06:32:54.348107|ChannelServer-0x00007effd9775700|async_shutdown,message=short read (SSL routines, SSL routines)
+info|2025-10-27 06:32:57.094107|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][Request]Request blocks,from=184,to=184,peer=73994dae...
+info|2025-10-27 06:32:57.098298|Download-1-0x00007effd576d700|[g:1][SYNC][id:374bdfe9...][Download][BlockSync]Download block execute,number=184,txs=1,hash=22a8c2ae...
+info|2025-10-27 06:32:57.098334|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]Executing block,txNum=1,num=184,parentHash=84b9e5d996bf7a5eb7a7af1e23a8308230a576a20d5c81a92b78a013e510177d,parentNum=183,parentStateRoot=193aa4e3ddcabc3eb1c4bc64eca338693c126abd7770f253f6dd6e3fee2170ea
+info|2025-10-27 06:32:57.098499|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]init GasChargeManagePrecompiled
+info|2025-10-27 06:32:57.098815|Download-1-0x00007effd576d700|[g:1][PRECOMPILED][TimerPrecompiled]getCurrentTimeMillis,timeMillis=1761571977098
+error|2025-10-27 06:32:57.098909|Download-1-0x00007effd576d700|[g:1][PRECOMPILED]SM2EncryptPrecompiled exception:Unknown function
+error|2025-10-27 06:32:57.098933|Download-1-0x00007effd576d700|[g:1][EXECUTIVECONTEXT]PrecompiledException,address=000000000000000000000000000000000000500b,message:=Unknown function
+error|2025-10-27 06:32:57.098967|Download-1-0x00007effd576d700|[g:1][EXECUTIVE][TxExeError]Transaction execution error,TransactionExceptionID=22,hash=34fcf37998bfab32d1354d28f63091611b3b7e8622725266293468c69156e50d
+error|2025-10-27 06:32:57.099676|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER]Invalid Block with bad stateRoot or receiptRoot or dbHash,blkNum=184,originHash=22a8c2ae...,curHash=d70f1cff...,orgReceipt=ed245b8c...,curRecepit=8937e548...,orgTxRoot=2d8a5d62...,curTxRoot=2d8a5d62...,orgState=00000000...,curState=00000000...,orgDBHash=00000000...,curDBHash=00000000...
+warning|2025-10-27 06:32:57.099777|Download-1-0x00007effd576d700|[g:1][BLOCKVERIFIER][executeBlock]executeBlock exception,blockNumber=184
+info|2025-10-27 06:32:59.150845|io_service-0x00007effe2787700|[P2P][Service] heartBeat,connected count=3
+info|2025-10-27 06:32:59.151793|P2P-0x00007effe2f88700|[NETWORK][Session]Received topic: [4] from 73994dae9e8b8da733108a4153dfe79151d701dff425f84c87b5324e8ebd02ab6a0ebc9e4f1e0298a7ddca50f94a8f95c62b6997226d571e470e8f2b0600634a
